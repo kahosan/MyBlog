@@ -24,6 +24,106 @@
     <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css">
     <!-- test -->
     <style type="text/css">
+        .search-form-wrap {
+            position: fixed;
+            top: -100%;
+            right: 10rem;
+            left: 0;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .search-form-wrap.on {
+            top: 0;
+            opacity: 1;
+        }
+
+        .local-search {
+            position: relative;
+            margin: 0 auto;
+            padding: 3rem;
+            background-color: #fff;
+            box-shadow: 0 1rem 3rem rgba(30, 62, 63, 0.05);
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+
+        .local-search-input {
+            border: 0.1rem #e6e6e6 solid;
+            -webkit-border-radius: 0.4rem;
+            -moz-border-radius: 0.4rem;
+            border-radius: 0.4rem;
+            background-color: #fff;
+            width: 100%;
+            padding: 1rem 1.5rem;
+            outline: none;
+        }
+
+        .local-search-input::-webkit-search-results-decoration,
+        .local-search-input::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+        }
+
+        .local-search-close {
+            position: absolute;
+            top: 3.85rem;
+            right: 4.25rem;
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            padding: 0;
+            border: none;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background-color: #9c8079;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .local-search-close::before {
+            content: '\f114';
+            font-family: feathericon;
+        }
+
+        .local-search-result {
+            text-align: left;
+        }
+
+        .search-result-list {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .search-result-list li {
+            padding: 1.5rem 0;
+        }
+
+        .search-result-list li:not(:last-child) {
+            border-bottom: 0.1rem #e6e6e6 solid;
+        }
+
+        .search-result-list li .search-result-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .search-result-list li .search-result {
+            padding-top: 0.5rem;
+            margin: 0;
+            max-height: 12rem;
+            overflow: hidden;
+        }
+
+        .search-result-list li em.search-keyword {
+            color: #9e6a4d;
+        }
+
+        .search-result-empty {
+            padding: 3rem 0 0;
+        }
     </style>
 </head>
 
@@ -71,10 +171,10 @@
                                 <!-- 懒得再复制一边样式了 -->
                             </div>
                         </div>
-                        <div class="search">
-                            <input type="text" autocomplete="off" name="search" placeholder="搜索"
-                                id="local-search-input" />
-                            <div id="local-search-result"></div>
+                        <div class="local-search local-search-plugin">
+                            <input type="search" id="local-search-input" class="local-search-input"
+                                placeholder="Search...">
+                            <div id="local-search-result" class="local-search-result"></div>
                         </div>
                     </div>
                 </div>
@@ -98,24 +198,10 @@
     <script src="/js/jquery.appear.js"></script>
     <script src="/js/google-analytics.js"></script>
     <script src="/js/typography.js"></script>
-    <script type="text/javascript" src="js/search.js">
-        var inputArea = document.querySelector("#local-search-input");
-        if (inputArea) {
-            inputArea.onclick = function () {
-                inputArea.placeholder = '首次搜索，需载入索引文件，请稍候';
-
-                getSearchFile();
-                this.onclick = null
-            }
-            inputArea.onkeydown = function () {
-                if (event.keyCode == 13) return false
-            }
-        }
-
-        var getSearchFile = function () {
-            var path = "/search.xml";
-            searchFunc(path, 'local-search-input', 'local-search-result');
-        }
+    <script src="/js/ocean.js"></script>
+    <script src="/js/search.js">
+        var path = "/search.xml"
+        searchFunc(path, 'local-search-input', 'local-search-result')
     </script>
 </body>
 
