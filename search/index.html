@@ -24,6 +24,16 @@
     <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css">
     <!-- test -->
     <style type="text/css">
+        @charset "utf-8";
+
+        @font-face {
+            font-family: feathericon;
+            font-weight: normal;
+            font-style: normal;
+            src: url("/css/feathericon/feathericon.eot");
+            src: url("/css/feathericon/feathericon.eot?#iefix") format('embedded-opentype'), url("/css/feathericon/feathericon.woff") format('woff'), url("/css/feathericon/feathericon.ttf") format('truetype'), url("/css/feathericon/feathericon.svg") format('svg');
+        }
+
         .search-form-wrap {
             position: fixed;
             top: -100%;
@@ -69,8 +79,8 @@
             top: 3.85rem;
             right: 4.25rem;
             display: block;
-            height: 2rem;
-            width: 2rem;
+            height: 3rem;
+            width: 3rem;
             padding: 0;
             border: none;
             -webkit-border-radius: 50%;
@@ -199,10 +209,6 @@
     <script src="/js/google-analytics.js"></script>
     <script src="/js/typography.js"></script>
     <script src="/js/ocean.js"></script>
-    <script src="/js/search.js">
-        var path = "/search.xml"
-        searchFunc(path, 'local-search-input', 'local-search-result')
-    </script>
 </body>
 
 </html>

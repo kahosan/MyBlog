@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>かほさん的树洞</title>
-  
+  <icon>http://example.com/icon.png</icon>
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-17T03:47:57.837Z</updated>
+  <updated>2020-11-17T16:30:04.777Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2020/11/16/MarkDown%E6%B5%8B%E8%AF%95/"/>
     <id>http://example.com/2020/11/16/MarkDown%E6%B5%8B%E8%AF%95/</id>
     <published>2020-11-16T12:47:02.182Z</published>
-    <updated>2020-11-17T03:47:57.837Z</updated>
+    <updated>2020-11-17T16:30:04.777Z</updated>
     
     
     <summary type="html">&lt;p&gt;测试 Markdown 的基本语法&lt;/p&gt;</summary>
@@ -40,7 +40,7 @@
     <link href="http://example.com/2020/10/31/hello-world/"/>
     <id>http://example.com/2020/10/31/hello-world/</id>
     <published>2020-10-31T07:28:27.241Z</published>
-    <updated>2020-10-31T07:28:27.241Z</updated>
+    <updated>2020-11-17T16:38:48.190Z</updated>
     
     
       
@@ -53,6 +53,10 @@
     
     
     
+    <category term="Init" scheme="http://example.com/categories/Init/"/>
+    
+    
+    <category term="Hello" scheme="http://example.com/tags/Hello/"/>
     
   </entry>
   
