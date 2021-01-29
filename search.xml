@@ -4,48 +4,17 @@
   
     
     <entry>
-      <title>Markdown 测试</title>
-      <link href="2020/11/16/MarkDown%E6%B5%8B%E8%AF%95/"/>
-      <url>2020/11/16/MarkDown%E6%B5%8B%E8%AF%95/</url>
+      <title>2021 电脑更新配置单</title>
+      <link href="2021/01/29/2021-%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E9%85%8D%E7%BD%AE%E5%8D%95/"/>
+      <url>2021/01/29/2021-%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E9%85%8D%E7%BD%AE%E5%8D%95/</url>
       
-        <content type="html"><![CDATA[<p>测试 Markdown 的基本语法</p><a id="more"></a><p>标题：</p><h1 id="h1级标题"><a href="#h1级标题" class="headerlink" title="h1级标题"></a>h1级标题</h1><h2 id="h2级标题"><a href="#h2级标题" class="headerlink" title="h2级标题"></a>h2级标题</h2><h3 id="h3级标题"><a href="#h3级标题" class="headerlink" title="h3级标题"></a>h3级标题</h3><h4 id="h4级标题"><a href="#h4级标题" class="headerlink" title="h4级标题"></a>h4级标题</h4><h5 id="h5级标题"><a href="#h5级标题" class="headerlink" title="h5级标题"></a>h5级标题</h5><h6 id="h6级标题"><a href="#h6级标题" class="headerlink" title="h6级标题"></a>h6级标题</h6><p>分割线：三个以上的短线 即可作出分割线</p><hr><p>超链接：[连接名称](网址 , 标题)<br><a href="https://www.baidu.com,/" title="我是标题">我是链接名</a><br><a href="/sonfilename/"><i class="icon-refresh"></i> 点我刷新</a></p><p>另一种超链接写法：[链接名][链接代号]<br>[here][3]<br>然后在别的地方定义 3 这个详细链接信息，<br>[3]: <a href="http://www.izhangbo.cn/">http://www.izhangbo.cn</a> “聚牛团队”</p><p>直接展示链接的写法：<a href="http://www.izhangbo.cn/">http://www.izhangbo.cn</a></p><p>键盘键<br><kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd></p><p>code格式：反引号<br>Use the <code>printf()</code> function.</p><p><code>There is a literal backtick (`) here.针对在代码区段内插入反引号的情况</code> </p><p>强调：<br><em>斜体强调</em><br><strong>粗体强调</strong></p><p>段落：以一个空行开始，以一个空行结束，中间的就是一个段落。</p><p>表格：</p><table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Computer</td><td>$1600</td></tr><tr><td>Phone</td><td>$12</td></tr><tr><td>Pipe</td><td>$1</td></tr></tbody></table><p>无序列表：使用 - 加一个空格（）</p><ul><li>无需列表1</li><li>无序列表2</li><li>无序列表3</li></ul><p>有序列表：使用 数字 加一个英文句点</p><ol><li>有序列表</li><li>有序列表</li><li>有序列表</li><li>有序列表</li><li>有序列表</li></ol><p>换行缩进形成代码区块</p><pre><code>这里先换行，然后缩进4个空格，之后的内容便可以原样显示了，适合用于显示代码内容。直到文本结束或最后一个存在缩进的行为止。    </code></pre><p>块引用</p><blockquote><p>给引用的文本开始位置都加一个 ‘&gt;’，<br>便可组成一个块引用。在块引用中，可以结合<br>其他markdown元素一块使用，比如列表。<br><strong>强调</strong><br>也可以只在第一行加大于号，其他位置不加。</p></blockquote><blockquote><ul><li>块引用里使用列表，需要和上面的内容隔开一个空行</li><li>记得加空格哦。</li></ul></blockquote><p>————————————————<br>原文作者：bobophp<br>转自链接：<a href="https://learnku.com/laravel/t/621/you-will-be-able-to-master-these-markdown-grammars">https://learnku.com/laravel/t/621/you-will-be-able-to-master-these-markdown-grammars</a><br>版权声明：著作权归作者所有。商业转载请联系作者获得授权，非商业转载请保留以上作者信息和原文链接。</p>]]></content>
+        <content type="html"><![CDATA[<p>从 18 年 AMD 大发神威发布了 ZEN 后，咱就跟随大佬们的步伐<br>发出了 AMD YES！的声音</p><a id="more"></a>]]></content>
       
-      
-      <categories>
-          
-          <category> 测试 </category>
-          
-      </categories>
       
       
         <tags>
             
-            <tag> Mrakdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="2020/10/31/hello-world/"/>
-      <url>2020/10/31/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Init </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hello </tag>
+            <tag> 配置单 AMD </tag>
             
         </tags>
       
