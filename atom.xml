@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-29T11:50:17.110Z</updated>
+  <updated>2021-03-13T14:18:46.737Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>第一次购买域名与VPS</title>
+    <link href="http://example.com/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/"/>
+    <id>http://example.com/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/</id>
+    <published>2021-03-13T13:39:49.000Z</published>
+    <updated>2021-03-13T14:18:46.737Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上学时就对有自己的域名与服务器挺期待的，&lt;br&gt;但碍于一些问题，一直没有动作。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="服务器" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="网站" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="域名" scheme="http://example.com/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+    <category term="VPS" scheme="http://example.com/tags/VPS/"/>
+    
+    <category term="网站" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2021 电脑更新配置单</title>
     <link href="http://example.com/2021/01/29/2021-%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E9%85%8D%E7%BD%AE%E5%8D%95/"/>
     <id>http://example.com/2021/01/29/2021-%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E9%85%8D%E7%BD%AE%E5%8D%95/</id>
     <published>2021-01-29T07:18:38.000Z</published>
-    <updated>2021-01-29T11:50:17.110Z</updated>
+    <updated>2021-03-13T14:11:42.570Z</updated>
     
     
     <summary type="html">&lt;p&gt;从 AMD 发布 ZEN2 系列后，咱就跟随大佬们的步伐&lt;br&gt;发出了 AMD YES! 的声音&lt;/p&gt;</summary>
     
     
     
-    <category term="电脑，更新" scheme="http://example.com/categories/%E7%94%B5%E8%84%91%EF%BC%8C%E6%9B%B4%E6%96%B0/"/>
+    <category term="电脑" scheme="http://example.com/categories/%E7%94%B5%E8%84%91/"/>
+    
+    <category term="更新" scheme="http://example.com/categories/%E7%94%B5%E8%84%91/%E6%9B%B4%E6%96%B0/"/>
     
     
     <category term="配置单" scheme="http://example.com/tags/%E9%85%8D%E7%BD%AE%E5%8D%95/"/>
