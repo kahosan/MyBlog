@@ -39,8 +39,12 @@
 <p>主页面长这样，咱觉得还挺好看的（其实后台有毒）</p>
 <img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/Namesilo.png" class="" title="namesilo">  
 
+<br/>
+
 <p>创建个账号，然后搜索下喜欢的域名是不是已经被购买了，没有的话直接点 Add 然后再点 checkout 购买就行了。</p>
 <img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/buy.png" class="" title="namesilo">
+
+<br/>
 
 <p>弹出的页面确认下购买的域名是否正确，然后点 CONTINUE。<br>选择支付宝或者微信支付。（买的时候没有截图，就不放图了）</p>
 <p>买完后点右上角的 Manage My Domains 里就能看到域名了，之后想换用 CF 还是继续用 Namesilo 自带的服务都是随你啦。</p>
@@ -49,13 +53,14 @@
 
 <br/>
 
-<p>流程和之前买域名一样，不过买的时候不能挂 VPN ，如果你填写的资料和 IP 不对应的话<br>账号就会被判 Fraud（欺诈），只能发工单解释自己忘记关代理了。</p>
-<p>这家支持支付宝，填完资料后直接购买就行了，然后创个密码连接 SSH ，<br>建议大家登机器第一件事就是把 SSH 密码登入关掉，改用密钥登入，不然鬼知道哪里的人就把你密码破解了拿去挖矿也说不定，咱就中招了，CPU 一直 100% ，咕咕噜了一下</p>
+<p>流程和之前买域名一样，不过买的时候<strong>不能挂 VPN</strong>，如果你填写的资料和 IP 不对应的话<br>账号就会被判 <strong>Fraud（欺诈）</strong>，只能发工单解释自己忘记关代理了。</p>
+<p>这家支持支付宝，填完资料后直接购买就行了，然后创个密码连接 SSH 。<br>建议大家登机器第一件事就是把 SSH 密码登入关掉，改用密钥登入，不然鬼知道哪里的人就把你密码破解了拿去挖矿也说不定（<br>咱就中招了，CPU 一直 100% ，咕咕噜了一下，</p>
 <img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/zz.png" class="" title="namesilo">  
 
 <br/>
-`netstat -antlp` 命令有这个 IP 段的，`top` 命令 **kswapd0** 进程占用巨高的，基本就是中招了。
-咱还是网络安全意识太缺乏了，之后要多多注意惹。
+
+<p><code>netstat -antlp</code> 命令有这个 IP 段的，<code>top</code> 命令 <strong>kswapd0</strong>  进程占用巨高的，基本就是中招了。</p>
+<p>也算是积累经验了吧，咱的网络防范意识太弱鸡惹。<br>过段时间就弄台好点的服务器，把博客丢上去吧。</p>
 ]]></content>
       <categories>
         <category>服务器</category>
