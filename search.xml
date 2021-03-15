@@ -12,10 +12,10 @@
 </blockquote>
 <p>更换之后的配置单</p>
 <blockquote>
-<p>CPU:  AMD 5600x<br>主板: ASUS B550 重炮手<br>散热: 利民 AS120 Plus<br>内存: 影驰名人堂 HOF II 3600 频率 8Gx2<br>机箱: 海盗船 4000D<br>电源: 安钛克 HCG650<br>显卡: 微星 GTX1060 DUKE 6G</p>
+<p>CPU:  AMD 5600x<br>主板: ASUS B550 重炮手<br>散热: 利民 AS120 Plus<br>内存: 影驰名人堂 HOF II 3600 频率 8Gx2<br>机箱: 海盗船 4000D<br>电源: 海韵 GX750<br>显卡: 微星 GTX1060 DUKE 6G</p>
 </blockquote>
 <p>从 2020 下半年开始，显卡的价格就变得很魔幻。<br>连二手的老显卡都涨了不少，所以咱觉得显卡还是等到明年再换吧。</p>
-<p>关于散热这方面，预算不够上 360 一体水，所以机箱也选择了风道比较好的<br>不然配合迎广 303，颜值是一等一的好看。</p>
+<p>关于散热这方面，预算不够上 360 一体水，所以机箱也选择了风道比较好的海盗船 4000D<br>不然配合迎广 303，颜值是一等一的好看。</p>
 <p>放个预览图:</p>
 <img src="/2021/01/29/2021-%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E9%85%8D%E7%BD%AE%E5%8D%95/%E8%BF%8E%E5%B9%BF303.jpg" class="" title="IMAGE_DESC">
 ]]></content>
@@ -47,11 +47,15 @@
 <h2 id="购买-VPS"><a href="#购买-VPS" class="headerlink" title="购买 VPS"></a>购买 VPS</h2><p>因为没有经验，就买了群友推荐的一个大盘鸡，打算用来做远程下载。<br>供应商是 <a href="https://www.hotlineservers.com/">HotlineServer</a> ，配置如下图：</p>
 <img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/vps.png" class="" title="namesilo">
 
+<br/>
+
 <p>流程和之前买域名一样，不过买的时候不能挂 VPN ，如果你填写的资料和 IP 不对应的话<br>账号就会被判 Fraud（欺诈），只能发工单解释自己忘记关代理了。</p>
 <p>这家支持支付宝，填完资料后直接购买就行了，然后创个密码连接 SSH ，<br>建议大家登机器第一件事就是把 SSH 密码登入关掉，改用密钥登入，不然鬼知道哪里的人就把你密码破解了拿去挖矿也说不定，咱就中招了，CPU 一直 100% ，咕咕噜了一下</p>
-<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/zz.png" class="" title="namesilo">
+<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/zz.png" class="" title="namesilo">  
 
-<p>netstat -antlp 命令有这个 IP 段的，TOP 命令 kswapd0 进程占用巨高的，基本就是中招了。<br>咱还是网络安全意识太缺乏了，之后要多多注意惹。</p>
+<br/>
+`netstat -antlp` 命令有这个 IP 段的，`top` 命令 **kswapd0** 进程占用巨高的，基本就是中招了。
+咱还是网络安全意识太缺乏了，之后要多多注意惹。
 ]]></content>
       <categories>
         <category>服务器</category>
