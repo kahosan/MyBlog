@@ -43,23 +43,6 @@
       </tags>
   </entry>
   <entry>
-    <title>打工人</title>
-    <url>/2021/06/26/%E6%89%93%E5%B7%A5%E4%BA%BA/</url>
-    <content><![CDATA[<p>从去年十二月份便开始实习，到今年六月也算是完结了。</p>
-<a id="more"></a>
-
-<p>浑浑噩噩度过五年大专生活，现在来看，是自讨苦吃。<br>现在工作的公司除了大小周，钱也不多但还算清闲，平日里有挺多空闲时间<br>想说多学习学习，却也只是嘴上说说。缺乏自制力的苦果也只能自己咽下了。</p>
-<p>虽说现在已经是社会人了，却没有一丝实感（没有被社会毒打过<br>以后没有什么改变的话，也就是这样浑浑噩噩混下去了吧。</p>
-]]></content>
-      <categories>
-        <category>人生</category>
-      </categories>
-      <tags>
-        <tag>社会</tag>
-        <tag>工作</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第一次购买域名与VPS</title>
     <url>/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/</url>
     <content><![CDATA[<p>上学时就对有自己的域名与服务器挺期待的，但碍于一些问题，一直没有动作。</p>
@@ -107,8 +90,7 @@
     <content><![CDATA[<p>为了让眼睛好受点，以及让博客看起来高级一些<br>咱决定为博客添加一个深色模式</p>
 <a id="more"></a>
 
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>实现的思路有几种，可以通过覆盖 CSS 样式的方式<br>还能通过 Media Query 来实现，这是大部分人选择的方式<br>这里提供一个详细教程:<br><a href="https://blog.skk.moe/post/hello-darkmode-my-old-friend/">你好黑暗，我的老朋友 —— 为网站添加用户友好的深色模式支持</a></p>
-<p>咱碍于技术原因就使用更为简单的覆盖 CSS 方式了<br>因为懒以及抱着能用就行的态度，只实现了简单的开关以及根据系统模式进行切换，没有根据时间自动进行切换的功能</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>实现的思路有几种，可以通过覆盖 CSS 样式的方式<br>还能通过 Media Query 来实现，这是大部分人选择的方式<br>咱碍于技术原因就使用更为简单的覆盖 CSS 方式了<br>因为懒以及抱着能用就行的态度，只实现了简单的开关以及根据系统模式进行切换，没有根据时间自动进行切换的功能</p>
 <h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>既然是覆盖，那咱们就需要制作两套 CSS<br>关于深色模式的背景色，Google 推荐将深色表面和 100% 白色文字的对比度至少设置为为 15.8:1<br>以防止对比度过高让眼睛感受到疲劳</p>
 <p>这里推荐使用 <code>#252d38</code> 是咱觉得比较舒服的背景色（从别的大佬那偷来的</p>
 <p>想法就是点击开关后，根据当前使用的模式来进行 CSS 的添加、删除操作<br>并且可以覆盖系统模式储存的当前使用的模式值，保证下次网页加载时也是使用开关的值<br>同理，系统模式切换网站也要同步切换，并覆盖开关储存的值</p>
@@ -175,6 +157,7 @@
 <img src="/2021/08/04/%E7%BB%99%E4%B8%BB%E9%A2%98%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/laji_Disqus.png" class="" title="玄学问题">
 
 <p>要是有大佬吐槽咱的代码，咱也只能弱弱的回一句：<br>能用就行（</p>
+<p>部分引用至 Sukkaw 的 <a href="https://blog.skk.moe/post/hello-darkmode-my-old-friend/">你好黑暗，我的老朋友 —— 为网站添加用户友好的深色模式支持</a></p>
 ]]></content>
       <categories>
         <category>主题</category>
@@ -182,6 +165,23 @@
       <tags>
         <tag>Hexo</tag>
         <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>打工人</title>
+    <url>/2021/06/26/%E6%89%93%E5%B7%A5%E4%BA%BA/</url>
+    <content><![CDATA[<p>从去年十二月份便开始实习，到今年六月也算是完结了。</p>
+<a id="more"></a>
+
+<p>浑浑噩噩度过五年大专生活，现在来看，是自讨苦吃。<br>现在工作的公司除了大小周，钱也不多但还算清闲，平日里有挺多空闲时间<br>想说多学习学习，却也只是嘴上说说。缺乏自制力的苦果也只能自己咽下了。</p>
+<p>虽说现在已经是社会人了，却没有一丝实感（没有被社会毒打过<br>以后没有什么改变的话，也就是这样浑浑噩噩混下去了吧。</p>
+]]></content>
+      <categories>
+        <category>人生</category>
+      </categories>
+      <tags>
+        <tag>社会</tag>
+        <tag>工作</tag>
       </tags>
   </entry>
 </search>
