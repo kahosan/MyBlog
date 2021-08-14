@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-26T02:04:30.527Z</updated>
+  <updated>2021-08-09T17:07:37.038Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给主题增加一个深色模式</title>
+    <link href="http://example.com/2021/08/04/%E7%BB%99%E4%B8%BB%E9%A2%98%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://example.com/2021/08/04/%E7%BB%99%E4%B8%BB%E9%A2%98%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</id>
+    <published>2021-08-04T15:04:27.000Z</published>
+    <updated>2021-08-09T17:07:37.038Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;为了让眼睛好受点，以及让博客看起来高级一些&lt;br&gt;咱决定为博客添加一个深色模式&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="主题" scheme="http://example.com/categories/%E4%B8%BB%E9%A2%98/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+    <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>打工人</title>
@@ -61,7 +82,7 @@
     <link href="http://example.com/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/"/>
     <id>http://example.com/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/</id>
     <published>2021-03-13T13:39:49.000Z</published>
-    <updated>2021-06-26T02:05:23.832Z</updated>
+    <updated>2021-08-04T15:42:48.517Z</updated>
     
     
     <summary type="html">&lt;p&gt;上学时就对有自己的域名与服务器挺期待的，但碍于一些问题，一直没有动作。&lt;/p&gt;</summary>
