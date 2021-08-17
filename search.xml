@@ -43,6 +43,48 @@
       </tags>
   </entry>
   <entry>
+    <title>第一次购买域名与VPS</title>
+    <url>/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/</url>
+    <content><![CDATA[<p>上学时就对有自己的域名与服务器挺期待的，但碍于一些问题，一直没有动作。</p>
+<a id="more"></a>
+
+<p>在临近毕业，并开始实习的时候，咱终于有能力捣鼓属于自己的网站了。<br>（咱的博客其实是看到某位大佬的博客，觉得挺好看的就抄了一个，照着网上的教程白嫖了Github）</p>
+<h2 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h2><p>因为咱不想备案、不使用国内服务器，便选择了国外的注册商。<br>在咕咕噜上搜索一番后，再三对比（懒得挑了）选择了价格便宜，并且支持支付宝以及微信的 <a href="https://www.namesilo.com/">Namesilo</a>。<br>这里提供一个介绍了比较知名的注册商的文章 <a href="https://tlanyan.me/domain-register-for-mainland/">适合国人的域名注册商推荐</a>。</p>
+<p>主页面长这样，咱觉得还挺好看的（其实后台有毒）</p>
+<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/Namesilo.png" class="" title="namesilo">  
+
+<br/>
+
+<p>创建个账号，然后搜索下喜欢的域名是不是已经被购买了，没有的话直接点 Add 然后再点 checkout 购买就行了。</p>
+<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/buy.png" class="" title="namesilo">
+
+<br/>
+
+<p>弹出的页面确认下购买的域名是否正确，然后点 CONTINUE。<br>选择支付宝或者微信支付。（买的时候没有截图，就不放图了）</p>
+<p>买完后点右上角的 Manage My Domains 里就能看到域名了，之后想换用 CF 还是继续用 Namesilo 自带的服务都是随你啦。</p>
+<h2 id="购买-VPS"><a href="#购买-VPS" class="headerlink" title="购买 VPS"></a>购买 VPS</h2><p>因为没有经验，就买了群友推荐的一个大盘鸡，打算用来做远程下载。<br>供应商是 <a href="https://www.hotlineservers.com/">HotlineServer</a> ，配置如下图：</p>
+<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/vps.png" class="" title="namesilo">
+
+<br/>
+
+<p>流程和之前买域名一样，不过买的时候<strong>不能挂 VPN</strong>，如果你填写的资料和 IP 不对应的话<br>账号就会被判 <strong>Fraud（欺诈）</strong>，只能发工单解释自己忘记关代理了。</p>
+<p>这家支持支付宝，填完资料后直接购买就行了，然后创个密码连接 SSH 。<br>建议大家登机器第一件事就是把 SSH 密码登入关掉，改用密钥登入，不然鬼知道哪里的人就把你密码破解了拿去挖矿也说不定（<br>咱就中招了，CPU 一直 100% ，咕咕噜了一下，</p>
+<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/zz.png" class="" title="namesilo">  
+
+<br/>
+
+<p><code>netstat -antlp</code> 命令有这个 IP 段的，<code>top</code> 命令 <strong>kswapd0</strong>  进程占用巨高的，基本就是中招了。</p>
+<p>也算是积累经验了吧，咱的网络防范意识太弱鸡惹。<br>过段时间就弄台好点的服务器，把博客丢上去吧。</p>
+]]></content>
+      <categories>
+        <category>消费</category>
+      </categories>
+      <tags>
+        <tag>域名</tag>
+        <tag>VPS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打工人</title>
     <url>/2021/06/26/%E6%89%93%E5%B7%A5%E4%BA%BA/</url>
     <content><![CDATA[<p>从去年十二月份便开始实习，到今年六月也算是完结了。</p>
@@ -65,8 +107,8 @@
     <content><![CDATA[<p>为了让眼睛好受点，以及让博客看起来高级一些<br>咱决定为博客添加一个深色模式</p>
 <a id="more"></a>
 
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>实现的思路有几种，可以通过覆盖 CSS 样式的方式<br>还能通过 Media Query 来实现，这是大部分人选择的方式<br>咱碍于技术原因就使用更为简单的覆盖 CSS 方式了<br>因为懒以及抱着能用就行的态度，只实现了简单的开关以及根据系统模式进行切换，没有根据时间自动进行切换的功能</p>
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>既然是覆盖，那咱们就需要制作两套 CSS<br>关于深色模式的背景色，Google 推荐将深色表面和 100% 白色文字的对比度至少设置为为 15.8:1<br>以防止对比度过高让眼睛感受到疲劳</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>实现的思路有几种，可以通过覆盖 CSS 样式的方式<br>还能通过 Media Query 来实现，这是大部分人选择的方式<br>咱碍于技术原因就使用更为简单的覆盖 CSS 方式了<br>因为懒以及抱着能用就行的态度，只实现了简单的开关以及根据系统模式进行切换，没有根据时间自动进行切换的功能</p>
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>既然是覆盖，那咱们就需要制作两套 CSS<br>关于深色模式的背景色，Google 推荐将深色表面和 100% 白色文字的对比度至少设置为为 15.8:1<br>以防止对比度过高让眼睛感受到疲劳</p>
 <p>这里推荐使用 <code>#252d38</code> 是咱觉得比较舒服的背景色（从别的大佬那偷来的</p>
 <p>想法就是点击开关后，根据当前使用的模式来进行 CSS 的添加、删除操作<br>并且可以覆盖系统模式储存的当前使用的模式值，保证下次网页加载时也是使用开关的值<br>同理，系统模式切换网站也要同步切换，并覆盖开关储存的值</p>
 <ul>
@@ -75,7 +117,7 @@
 <li>在兼容的浏览器或操作系统上，用户还可以通过开关覆盖当前的显示模式</li>
 </ul>
 <p>具体的代码实现可以看这里 <a href="https://gist.github.com/kahosan/0ead9afe19bd42361b490f667e2f7aca">darkmode</a></p>
-<h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><p>说几个需要注意的地方：</p>
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>说几个需要注意的地方：</p>
 <blockquote>
 <p>系统的模式可以通过 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/matchMedia">matchMedia</a> 获取到，封装一下就行了</p>
 </blockquote>
@@ -123,7 +165,7 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;color-scheme&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;dark light&quot;</span>&gt;</span></code></pre>
 
-<h3 id="如果你的评论系统是-Disqus"><a href="#如果你的评论系统是-Disqus" class="headerlink" title="如果你的评论系统是 Disqus"></a>如果你的评论系统是 Disqus</h3><p>且支持了深色模式滚动条<br>需要在深色模式的 CSS 中添加：</p>
+<h2 id="如果你的评论系统是-Disqus"><a href="#如果你的评论系统是-Disqus" class="headerlink" title="如果你的评论系统是 Disqus"></a>如果你的评论系统是 Disqus</h2><p>且支持了深色模式滚动条<br>需要在深色模式的 CSS 中添加：</p>
 <pre><code class="hljs css"><span class="hljs-selector-tag">iframe</span> &#123;
     <span class="hljs-attribute">color-scheme</span>: light;
 &#125;</code></pre>
@@ -140,48 +182,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一次购买域名与VPS</title>
-    <url>/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/</url>
-    <content><![CDATA[<p>上学时就对有自己的域名与服务器挺期待的，但碍于一些问题，一直没有动作。</p>
-<a id="more"></a>
-
-<p>在临近毕业，并开始实习的时候，咱终于有能力捣鼓属于自己的网站了。<br>（咱的博客其实是看到某位大佬的博客，觉得挺好看的就抄了一个，照着网上的教程白嫖了Github）</p>
-<h2 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h2><p>因为咱不想备案、不使用国内服务器，便选择了国外的注册商。<br>在咕咕噜上搜索一番后，再三对比（懒得挑了）选择了价格便宜，并且支持支付宝以及微信的 <a href="https://www.namesilo.com/">Namesilo</a>。<br>这里提供一个介绍了比较知名的注册商的文章 <a href="https://tlanyan.me/domain-register-for-mainland/">适合国人的域名注册商推荐</a>。</p>
-<p>主页面长这样，咱觉得还挺好看的（其实后台有毒）</p>
-<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/Namesilo.png" class="" title="namesilo">  
-
-<br/>
-
-<p>创建个账号，然后搜索下喜欢的域名是不是已经被购买了，没有的话直接点 Add 然后再点 checkout 购买就行了。</p>
-<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/buy.png" class="" title="namesilo">
-
-<br/>
-
-<p>弹出的页面确认下购买的域名是否正确，然后点 CONTINUE。<br>选择支付宝或者微信支付。（买的时候没有截图，就不放图了）</p>
-<p>买完后点右上角的 Manage My Domains 里就能看到域名了，之后想换用 CF 还是继续用 Namesilo 自带的服务都是随你啦。</p>
-<h2 id="购买-VPS"><a href="#购买-VPS" class="headerlink" title="购买 VPS"></a>购买 VPS</h2><p>因为没有经验，就买了群友推荐的一个大盘鸡，打算用来做远程下载。<br>供应商是 <a href="https://www.hotlineservers.com/">HotlineServer</a> ，配置如下图：</p>
-<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/vps.png" class="" title="namesilo">
-
-<br/>
-
-<p>流程和之前买域名一样，不过买的时候<strong>不能挂 VPN</strong>，如果你填写的资料和 IP 不对应的话<br>账号就会被判 <strong>Fraud（欺诈）</strong>，只能发工单解释自己忘记关代理了。</p>
-<p>这家支持支付宝，填完资料后直接购买就行了，然后创个密码连接 SSH 。<br>建议大家登机器第一件事就是把 SSH 密码登入关掉，改用密钥登入，不然鬼知道哪里的人就把你密码破解了拿去挖矿也说不定（<br>咱就中招了，CPU 一直 100% ，咕咕噜了一下，</p>
-<img src="/2021/03/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E4%B8%8EVPS/zz.png" class="" title="namesilo">  
-
-<br/>
-
-<p><code>netstat -antlp</code> 命令有这个 IP 段的，<code>top</code> 命令 <strong>kswapd0</strong>  进程占用巨高的，基本就是中招了。</p>
-<p>也算是积累经验了吧，咱的网络防范意识太弱鸡惹。<br>过段时间就弄台好点的服务器，把博客丢上去吧。</p>
-]]></content>
-      <categories>
-        <category>消费</category>
-      </categories>
-      <tags>
-        <tag>域名</tag>
-        <tag>VPS</tag>
       </tags>
   </entry>
 </search>
