@@ -1,0 +1,61 @@
+div#site-nav.site-title-links
+    ul
+        li
+            if is_home()
+                a.current(href=config.root)= __('Home')
+            else
+                a(href=config.root)= __('Home')
+        li
+            if is_archive()
+                a.current(href=config.root + config.archive_dir)= __('Archive')
+            else
+                a(href=config.root + config.archive_dir)= __('Archive')
+        - if (site.categories.length > 0) {
+        li
+            if is_current('categories/')
+                a.current(href=config.root + config.category_dir)= __('Categories')
+            else
+                a(href=config.root + config.category_dir)= __('Categories')
+        - }
+        - if (site.tags.length > 0) {
+        li
+            if is_current('tags/')
+                a.current(href=config.root + config.tag_dir)= __('Tags')
+            else
+                a(href=config.root + config.tag_dir)= __('Tags')
+        - }
+        //- li
+        //-     if is_current('about/')
+        //-         a.current(href=url_for(source.about_dir))= __('About')
+        //-     else
+        //-         a(href=url_for(config.about_dir))= __('About')
+        //- li
+        //-     if is_current('search/')
+        //-         a.current(href=url_for(source.search_dir))= __('Search')
+        //-     else
+        //-         a(href=url_for(config.search_dir))= __('Search')
+        include ../mixins
+        +make_page_links()
+        li.soc
+            if theme.github
+                a(href="https://github.com/" + theme.github, target="_blank", rel="noopener noreferrer")
+                    i.fa.fa-github &nbsp;
+            if theme.twitter
+                a(href="https://twitter.com/" + theme.twitter, target="_blank", rel="noopener noreferrer")
+                    i.fa.fa-twitter &nbsp;
+            if theme.instagram
+                a(href="https://www.instagram.com/" + theme.instagram, target="_blank", rel="noopener noreferrer")
+                    i.fa.fa-instagram &nbsp;
+            if theme.weibo
+                a(href="http://weibo.com/u/" + theme.weibo, target="_blank", rel="noopener noreferrer")
+                    i.fa.fa-weibo &nbsp;
+            if theme.rss
+                a(href=url_for(theme.rss), target="_blank", rel="noopener noreferrer")
+                    i.fa.fa-rss &nbsp;
+            if theme.mode
+                a(href="javascript:aCDM(tM());", aria-label="切换暗色模式", id="darkmode")
+                    i.fa.fa-adjust &nbsp;
+                    
+    div.visible-lg.visible-md.visible-sm.site-nav-footer
+        br.site-nav-footer-br
+        include footer
