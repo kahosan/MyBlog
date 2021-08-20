@@ -1,0 +1,9 @@
+name = "kaho_blog"
+type = "webpack"
+usage_model = ''
+compatibility_flags = []
+workers_dev = false
+
+route = "blog.kahosan.top/*"
+
+site = {bucket = "./public", entry-point = "workers-site"}
