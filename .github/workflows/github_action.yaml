@@ -47,6 +47,8 @@ jobs:
       uses: cloudflare/wrangler-action@1.3.0
       env:
         USER: root
+        CF_ACCOUNT_ID: ${{ secrets.ACCOUNTID }}
+        CF_ZONE_ID: ${{ secrets.ZONEID }}
       with:
         apiToken: ${{ secrets.CF_WORKERS_TOKEN }} # 前一步设置的 Secrets 的名称
         # Wrangler Action 也支持使用传统的 Global API Token + Email 的鉴权方式，但不推荐
