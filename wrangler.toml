@@ -3,7 +3,7 @@ type = "webpack"
 usage_model = ''
 compatibility_flags = []
 workers_dev = false
-
+account_id = "$ACCOUNTID"
 route = "blog.kahosan.top/*"
-
+zone_id = "$ZONEID"
 site = {bucket = "./public", entry-point = "workers-site"}
