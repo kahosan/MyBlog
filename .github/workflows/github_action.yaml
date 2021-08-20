@@ -24,7 +24,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     # 缓存 node_modules，缓存机制参见 GitHub 文档：https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows
     - name: Cache node_modules
-      uses: actions/cache@v1 # 使用 GitHub 官方的缓存 Action。
+      uses: actions/cache@master # 使用 GitHub 官方的缓存 Action。
       env:
         cache-name: hexo-node-modules
       with:
