@@ -329,7 +329,7 @@ a {
 
 .post-container a:not(.a-title-link, .a-tag, .headerlink, #more):hover {
   opacity: 1;
-  transition: box-shadow .2s linear;
+  transition: all .3s ease;
   box-shadow: inset 0 -8.8px var(--meguminGroundColor);
 }
 
