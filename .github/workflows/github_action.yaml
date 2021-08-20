@@ -13,7 +13,7 @@ jobs:
           - 12.x
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@master
       with:
         persist-credentials: false
       # 令 GitHub 在 git clone 和 git checkout 后「忘记」使用的 credentials。
