@@ -2,7 +2,7 @@
  * @Author: kaho
  * @Date: 2021-07-03 09:46:00
  * @Mail: kahosan@outlook.com
- * @LastEditTime: 2021-08-10 00:23:51
+ * @LastEditTime: 2021-08-21 22:50:52
  */
 
 // 获取当前操作系统的主题模式
@@ -30,7 +30,7 @@ const getLS = (key) => {
   try {
     return localStorage.getItem(key);
   } catch (e) {
-    return null // 与 localStorage 中没有找到对应 key 的行为一致
+    return null; // 与 localStorage 中没有找到对应 key 的行为一致
   }
 };
 
@@ -38,7 +38,7 @@ const getLS = (key) => {
 const inverMode = {
   dark: "light",
   light: "dark"
-}
+};
 
 
 const validColorModeKeys = {
@@ -55,12 +55,12 @@ const addDarkMode = () => {
   linkTag.setAttribute('rel', 'stylesheet');
 
   document.head.appendChild(linkTag);
-}
+};
 
 // 删除夜间模式
 const deleteDarkMode = () => {
   getDarkStyleIsExist().remove();
-}
+};
 
 
 //应用夜间模式
@@ -72,7 +72,7 @@ const applyCustomdDarkMode = mode => {
   } else if (currentMode === "dark" && getDarkStyleIsExist()) {
     deleteDarkMode();
   }
-}
+};
 
 //获取转换后的当前模式
 const toggleMode = () => {
@@ -89,7 +89,7 @@ const toggleMode = () => {
   setLS(nowMode, currentMode);
 
   return currentMode;
-}
+};
 
 applyCustomdDarkMode();
 
