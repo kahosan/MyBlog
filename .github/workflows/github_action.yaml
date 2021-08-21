@@ -27,5 +27,9 @@ jobs:
       # 仅仅是 Deploy 部分有所不同而已
       - name: Deploy
         uses: cloudflare/wrangler-action@1.3.0
+        env:
+          USER: root
+          CF_ACCOUNT_ID: ${{ secrets.ACCOUNTID }}
+          CF_ZONE_ID: ${{ secrets.ZONEID }}
         with:
           apiToken: ${{ secrets.CF_WORKERS_TOKEN }}  # CF_WORKERS_TOKEN 为保存 Token 的 Secret 名
