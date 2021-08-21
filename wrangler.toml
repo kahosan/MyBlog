@@ -1,7 +1,5 @@
-name = "kaho_blog"
-type = "webpack"
-usage_model = ''
-compatibility_flags = []
+# name = "kaho_blog"
+# type = "webpack"
 workers_dev = false
 account_id = "$CF_ACCOUNT_ID"
 route = "blog.kahosan.top/*"

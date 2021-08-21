@@ -146,10 +146,10 @@ feed:
 #   # example, https://github.com/hexojs/hexojs.github.io
 #   branch: master
 
-deploy:
-  type: git
-  repo: https://github.com/kahosan/kahosan.github.io.git
-  branch: master
+# deploy:
+#   type: git
+#   repo: https://github.com/kahosan/kahosan.github.io.git
+#   branch: master
   
 
 
