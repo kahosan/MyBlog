@@ -1,4 +1,4 @@
-# name = "kaho_blog"
+name = "kaho_blog"
 type = "webpack"
 workers_dev = false
 account_id = "$CF_ACCOUNT_ID"
