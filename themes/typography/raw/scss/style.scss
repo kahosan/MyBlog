@@ -318,8 +318,10 @@ a {
   cursor: hand;
   background-color: initial;
   color: var(--foregroundColor) !important;
-  border-bottom: 2px solid #D04950;
+  border-bottom: none;
   text-decoration: none !important;
+  transition: all .3s ease;
+  box-shadow: 0 -2px var(--meguminGroundColor)inset;
 }
 
 .post-container a:not(.a-title-link, .a-tag, .headerlink, #more):hover,
@@ -329,8 +331,8 @@ a {
 
 .post-container a:not(.a-title-link, .a-tag, .headerlink, #more):hover {
   opacity: 1;
-  transition: all .3s ease;
-  box-shadow: inset 0 -8.8px var(--meguminGroundColor);
+//  transition: all .3s ease;
+  box-shadow: 0 -8.8px var(--meguminGroundColor)inset;
 }
 
 .a-title {
