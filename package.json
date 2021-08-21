@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "hexo": "^5.0.0",
+    "hexo-all-minifier": "^0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
@@ -28,7 +29,6 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-pug": "^2.0.0",
     "hexo-renderer-stylus": "^2.0.0",
-    "hexo-server": "^2.0.0",
-    "jshint": "^2.13.1"
+    "hexo-server": "^2.0.0"
   }
 }
