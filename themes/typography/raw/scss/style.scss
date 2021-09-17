@@ -28,7 +28,8 @@ $verticalSecondaryPaddingTopPatch: 1px;
   --backgroundColor: #ffffff;
   --foregroundColor: #2e405b;
   --foregroundColor-darken: #000;
-  --foregroundColor-darken-a: #3f587d !important;
+  // --foregroundColor-darken-a: #3f587d !important;
+  --foregroundColor-darken-a: #3f587d9e !important;
   --codegroudColor: #e6e4e4;
   --meguminGroundColor: #ff4b44;
 }
@@ -377,16 +378,16 @@ blockquote {
     border-bottom: solid transparent 2px;
 
     &:hover {
-      color: var(--foregroundColor-darken-a);
+      color: var(--foregroundColor-darken-a) !important;
 
       background-color: transparent !important;
       text-decoration: none;
       border-bottom: solid rgba(0, 0, 0, 0) 2px;
     }
 
-    &:focus {
-      color: var(--foregroundColor-darken-a) !important;
-    }
+    // &:focus {
+    //   color: var(--foregroundColor-darken-a) !important;
+    // }
   }
 }
 
