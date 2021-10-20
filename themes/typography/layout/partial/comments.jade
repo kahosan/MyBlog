@@ -1,45 +1,5 @@
 if theme.disqus
   script(src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js")
   div#disqus_thread
-
-  script.
-    function loadDisqus() {
-      let dsqjs =  new DisqusJS({
-        shortname: '#{theme.disqus}',
-          siteName: 'Kahosan',
-          identifier: '#{page.path}',
-          url: '#{config.url}/#{page.path}',
-          title: '#{title}',
-          api: 'https://disqus.skk.moe/disqus/',
-          apikey: 'Fpzir1NPIs3LFQTzoT8bYrb1f2JWFk6GTf1GNSM8lUIcvsgZyAt9tbK0sxJ2hm7J',
-          nocomment: '嘿，远道而来的旅行者，想喝点什么？',
-          admin: 'disqus_sFK7L16tDo',
-          adminLabel: ''
-      });
-    }
-
-    let runningOnBrowser = typeof window !== "undefined";
     
-    // 通过检查 scroll 事件 API 和 User-Agent 来匹配爬虫
-    let isBot = runningOnBrowser 
-    && !("onscroll" in window) 
-    || typeof navigator 
-    !== "undefined" 
-    && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-
-    // 检查当前浏览器是否支持 IntersectionObserver API
-    let supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
-
-    if (!isBot && supportsIntersectionObserver) {
-    // 当前环境不是爬虫、并且浏览器兼容 IntersectionObserver API
-      var disqus_observer = new IntersectionObserver((entrise) => {
-        loadDisqus();
-        disqus_observer.disconnect();
-      }, { threshold: [0] });
-      // 设置让 Observer 观察 #disqus_thread 元素
-      disqus_observer.observe(document.getElementById('disqus_thread'));
-    } else {
-    // 当前环境是爬虫、或当前浏览器其不兼容 IntersectionObserver API
-    // 直接加载 Disqus
-      loadDisqus();
-    }
+  script(src="/js/typography.js") 
