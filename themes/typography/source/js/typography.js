@@ -51,7 +51,6 @@ $(document).ready(function () {
         $("iframe").each((index, element) => {
             let id = /dsq-app/.test(element.name)
             let attr =  element.hasAttribute("src")
-            console.log("循环");
             if(id && !attr) {
                 element.remove()
                 clearInterval(disqAds);
