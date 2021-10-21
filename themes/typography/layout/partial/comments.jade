@@ -28,17 +28,16 @@ if theme.disqus
 
     // 检查当前浏览器是否支持 IntersectionObserver API
     let supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
-
-    if (!isBot && supportsIntersectionObserver) {
-    // 当前环境不是爬虫、并且浏览器兼容 IntersectionObserver API
-      var disqus_observer = new IntersectionObserver((entrise) => {
+    setTimeout(function () {
+      if (!isBot && supportsIntersectionObserver) {
+        let disqus_observer = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) {
+            loadDisqus();
+            disqus_observer.disconnect();
+          }
+        }, { threshold: [0] });
+        document.getElementById('disqus_thread') && disqus_observer.observe(document.getElementById('disqus_thread'));
+      } else {
         loadDisqus();
-        disqus_observer.disconnect();
-      }, { threshold: [0] });
-      // 设置让 Observer 观察 #disqus_thread 元素
-      disqus_observer.observe(document.getElementById('disqus_thread'));
-    } else {
-    // 当前环境是爬虫、或当前浏览器其不兼容 IntersectionObserver API
-    // 直接加载 Disqus
-      loadDisqus();
-    }
+      }
+    }, 1);
