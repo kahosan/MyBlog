@@ -10,10 +10,10 @@
     "start": "hexo clean && hexo g && hexo s"
   },
   "hexo": {
-    "version": "5.2.0"
+    "version": "5.4.0"
   },
   "dependencies": {
-    "hexo": "^5.0.0",
+    "hexo": "^5.4.0",
     "hexo-all-minifier": "^0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^3.0.0",
