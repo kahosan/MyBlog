@@ -2,6 +2,8 @@
 // var(--foregroundColor): #2e405b;
 // var(--codegroudColor): #e6e4e4;
 // var(--meguminGroundColor): #ff4b44;
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600");
+@import "animation";
 $fontList: "Source Sans Pro",
 "Roboto",
 "Helvetica",
@@ -19,8 +21,7 @@ $titleFontList: "HiraMinProN-W6",
 serif;
 $verticalPrimaryPaddingTopPatch: 0;
 $verticalSecondaryPaddingTopPatch: 1px;
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600");
-@import "animation";
+
 
 :root {
   color-scheme: light;
