@@ -22,5 +22,8 @@ showPageCount: true
 showCategories: true
 showTags: true
 
+# google_analytics
+GA_MEASUREMENT_ID: G-KNGSESZXK7
+
 # Color scheme
 # themeStyle: light # light/dark
