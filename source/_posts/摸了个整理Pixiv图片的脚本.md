@@ -16,8 +16,8 @@ categories: [生活， 视觉]
 
 ### 使用前  
 
-![old.png](https://cdn.jsdelivr.net/npm/xfb/img/old.png)
+![old.png](https://cdn.jsdelivr.net/npm/xfb/img/new/old.png)
 
 ### 使用后  
 
-![new.png](https://cdn.jsdelivr.net/npm/xfb/img/new.png)
+![new.png](https://cdn.jsdelivr.net/npm/xfb/img/new/new.png)

@@ -170,3 +170,11 @@ image_minifier:
   pngquant: false
   progressive: false
   silent: false
+
+# Lazyload
+lazyload:
+  enable: true
+  onlypost: false # optional
+  loadingImg: # optional eg ./images/loading.gif
+  isSPA: false # optional
+  preloadRatio: 3 # optional, default is 1
