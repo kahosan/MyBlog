@@ -23,7 +23,6 @@ pretty_urls:
 
 # Directory
 about_dir: about
-search_dir: search
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -43,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
