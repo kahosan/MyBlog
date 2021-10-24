@@ -1,9 +1,10 @@
 'use strict';
 
 hexo.extend.filter.register('after_post_render', (data) => {
-    const config = hexo.theme.lazyload;
+    const config = hexo.theme.config.lazyload;
 
     if (!config || config.enable !== true) {
+        
         return;
     }
 
@@ -23,4 +24,5 @@ hexo.extend.filter.register('after_post_render', (data) => {
 
         return str.replace(p2, `${p2}" class="lazy" data-srcset="${p2}" srcset="${loadingImage}`);
     });
+
 });
