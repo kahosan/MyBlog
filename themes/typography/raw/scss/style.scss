@@ -404,10 +404,10 @@ img {
 }
 
 img.lazy {
-  -webkit-transition: -webkit-filter 0.375s ease 0s;
-  transition: -webkit-filter 0.375s ease 0s;
-  transition: filter 0.375s ease 0s;
-  transition: filter 0.375s ease 0s, -webkit-filter 0.375s ease 0s;
+  -webkit-transition: -webkit-filter 375ms ease-in .25s;
+  transition: -webkit-filter 375ms ease-in .25s;
+  transition: filter 375ms ease-in .25s;
+  transition: filter 375ms ease-in .25s, -webkit-filter 375ms ease-in .25s;
 }
 
 img.lazy:not(.loaded) {
