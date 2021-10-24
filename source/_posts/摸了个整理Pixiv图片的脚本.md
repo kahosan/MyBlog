@@ -1,8 +1,8 @@
 ---
 title: 摸了个整理 Pixiv 图片的脚本
 date: 2021-10-18 22:23:52
-tags: [日常, 脚本]
-categories: [生活， 视觉]
+tags: [日常, Pixiv]
+categories: [脚本]
 ---
 
 闲的时候翻手机里存的色图，突然就犯病了
