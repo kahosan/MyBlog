@@ -26,9 +26,9 @@
   "homepage": "https://github.com/SumiMakito/hexo-theme-typography/README.md",
   "dependencies": {
     "autoprefixer": "^9.2.0",
-    "node-sass": "^4.14.1",
-    "postcss": "^7.0.5",
-    "postcss-cli": "^6.0.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.1",
     "scss-compile": "^0.1.7",
     "yamljs": "^0.3.0"
   }

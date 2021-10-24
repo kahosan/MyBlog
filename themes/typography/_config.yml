@@ -25,5 +25,9 @@ showTags: true
 # google_analytics
 GA_MEASUREMENT_ID: G-KNGSESZXK7
 
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImage:
 # Color scheme
 # themeStyle: light # light/dark

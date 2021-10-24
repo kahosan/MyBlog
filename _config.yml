@@ -172,9 +172,9 @@ image_minifier:
   silent: false
 
 # Lazyload
-lazyload:
-  enable: true
-  onlypost: false # optional
-  loadingImg: ./themes/typography/source/images/loading.gif
-  isSPA: false # optional
-  preloadRatio: 3 # optional, default is 1
+# lazyload:
+#   enable: false
+#   onlypost: false # optional
+#   loadingImg: https://cdn.jsdelivr.net/npm/skx@0.0.9/img/lazy.gif #/images/loading.gif
+#   isSPA: false # optional
+#   preloadRatio: 3 # optional, default is 1
