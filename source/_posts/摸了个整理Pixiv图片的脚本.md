@@ -16,8 +16,8 @@ categories: [脚本]
 
 ### 使用前  
 
-![old.png](https://cdn.jsdelivr.net/npm/xfb@0.5.0/img/new/old.png)
+![old.png](https://cdn.jsdelivr.net/npm/xfb/img/new/old.png)
 
 ### 使用后  
 
-![new.png](https://cdn.jsdelivr.net/npm/xfb@0.5.0/img/new/new.png)
+![new.png](https://cdn.jsdelivr.net/npm/xfb/img/new/new.png)

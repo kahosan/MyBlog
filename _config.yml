@@ -23,6 +23,7 @@ pretty_urls:
 
 # Directory
 about_dir: about
+util_dir: util
 source_dir: source
 public_dir: public
 tag_dir: tags
