@@ -139,9 +139,10 @@ body {
 }
 
 .main-container {
+  width: 60%;
   text-align: left;
   margin: 0;
-  padding: 80px 40px;
+  padding: 80px 40px 80px 60px;
   overflow: hidden;
   float: left;
 
@@ -164,7 +165,7 @@ body {
 }
 
 .side-container {
-  height: 100vh;
+  height: 100%;
   position: fixed;
   right: 0;
   font-style: normal;
@@ -173,7 +174,7 @@ body {
   transform: rotate(0deg);
   text-align: left;
   float: right;
-  padding: 80px 20px;
+  padding-top: 80px;
   width: 35%;
 }
 
@@ -243,22 +244,23 @@ body {
 }
 
 .site-title-links {
+  margin-top: 50px;
   font-weight: bold;
   font-style: normal;
-  margin: 0;
-  padding: 60px 0;
+  // margin: 0;
+  // padding: 60px 0;
   text-align: left;
-  position: fixed;
-  bottom: -25px;
+  // position: fixed;
+  // bottom: -25px;
 }
 
 .site-title-links ul {
+  width: 100%;
   list-style: none;
   padding: 0;
 }
 
 .site-title-links ul li {
-  display: block;
   margin: 5px 0;
   font-size: 18px;
 }
@@ -583,10 +585,11 @@ figure {
   }
 
   .main-container {
+    width: 100%;
     text-align: left;
     height: auto;
     margin: 0;
-    padding: 20px 30px;
+    padding: 0px 30px;
     overflow: auto;
   }
 
@@ -677,7 +680,8 @@ figure {
   }
 
   .main-container {
-    padding-top: 40px;
+    width: 100%;
+  //  padding-top: 40px;
     padding-bottom: 60px;
   }
 }
@@ -755,10 +759,11 @@ figure {
   }
 
   .main-container {
+    width: 100%;
     text-align: left;
     height: auto;
     margin: 0;
-    padding: 20px 30px;
+    padding: 0px 30px;
     overflow: auto;
   }
 
