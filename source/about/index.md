@@ -10,7 +10,7 @@ date: 2020-11-17 23:25:54
 面向咕咕噜编程（
 
 喜欢的音乐类型是 [R&B](https://zh.m.wikipedia.org/wiki/节奏布鲁斯)。
-最喜欢的歌手是 [王力宏](https://zh.m.wikipedia.org/wiki/王力宏)。
+最喜欢的歌手是 ~~[王力宏](https://zh.m.wikipedia.org/wiki/王力宏)~~ 无（明星都是经不起时间的的沉淀呀。
 
 ---
 
