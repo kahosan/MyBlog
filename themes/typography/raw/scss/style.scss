@@ -4,21 +4,24 @@
 // var(--meguminGroundColor): #ff4b44;
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600");
 @import "animation";
-$fontList: "Source Sans Pro",
-"Roboto",
+@font-face {
+  font-family: 'monofki';
+  font-style: normal;
+  src: url('/fonts/monofoki.ttf') format('truetype');
+}
+
+$fontList: "Trebuchet MS", "Source Sans Pro",
 "Helvetica",
 "Helvetica Neue",
-"Source Han Sans SC",
-"Source Han Sans TC",
 "PingFang SC",
-"PingFang HK",
-"PingFang TC",
 sans-serif;
-$titleFontList: "HiraMinProN-W6",
-"Source Han Serif CN",
+
+$code-font-family: monofoki, Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$titleFontList: "Trebuchet MS",
 "Source Han Serif SC",
-"Source Han Serif TC",
 serif;
+
 $verticalPrimaryPaddingTopPatch: 0;
 $verticalSecondaryPaddingTopPatch: 1px;
 
@@ -470,7 +473,7 @@ pre {
   font-size: 15px;
 
   * {
-    font-family: Consolas, Monaco, Menlo, "Source Code Pro", monospace;
+    font-family: $code-font-family;
     background: transparent !important;
   }
 }
@@ -481,6 +484,7 @@ code {
   color: #383a42;
   border-radius: 2px;
   font-size: 15px;
+  font-family: $code-font-family;
 }
 
 figure {
