@@ -53,7 +53,7 @@ div#site-nav.site-title-links
                 a(href=url_for(theme.rss), target="_blank", rel="noopener noreferrer")
                     i.fa.fa-rss &nbsp;
             if theme.mode
-                a(href="javascript:aCDM(tM());", aria-label="切换暗色模式", id="darkmode")
+                a(href="javascript:modeChange();", aria-label="切换暗色模式", id="darkmode")
                     i.fa.fa-adjust &nbsp;
                     
     div.visible-lg.visible-md.visible-sm.site-nav-footer

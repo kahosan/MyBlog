@@ -2,17 +2,14 @@
  * @Author: kaho
  * @Date: 2021-07-03 09:46:00
  * @Mail: kahosan@outlook.com
- * @LastEditTime: 2021-08-21 22:50:52
+ * @LastEditTime: 2022-02-17
  */
 
-// 获取当前操作系统的主题模式
-const nowMode = "nowMode";
-const darkStyle = "/css/style-dark.css";
-const darkModeToggleBottonElement = document.getElementById("darkmode");
-const getModeFromSystem = () => window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
-const getDarkStyleIsExist = () => document.getElementById("dark");
+const darkStyle = '/css/style-dark.css';
+const darkModeToggleBottonElement = document.getElementById('darkmode');
+const getModeFromSystem = () => (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+const getDarkCssElement = () => document.querySelector('link[id="dark"]');
 
-// 封装下 LocalStorage 的操作，以应对 HTML5 Storage 被禁用、localStorage 被写满、localStorage 实现不完整的情况
 // 来源 Sukka
 const setLS = (key, value) => {
   try {
@@ -20,13 +17,13 @@ const setLS = (key, value) => {
   } catch (e) {}
 };
 
-const removeLS = (key) => {
+const removeLS = key => {
   try {
     localStorage.removeItem(key);
   } catch (e) {}
 };
 
-const getLS = (key) => {
+const getLS = key => {
   try {
     return localStorage.getItem(key);
   } catch (e) {
@@ -34,80 +31,64 @@ const getLS = (key) => {
   }
 };
 
-//反转样式
 const inverMode = {
-  dark: "light",
-  light: "dark"
+  dark: 'light',
+  light: 'dark',
 };
 
-
-const validColorModeKeys = {
-  dark: true,
-  light: true
-};
-
-// 加入夜间模式
 const addDarkMode = () => {
-  linkTag = document.createElement('link');
-
-  linkTag.id = 'dark';
-  linkTag.href = darkStyle;
-  linkTag.setAttribute('rel', 'stylesheet');
-
-  document.head.appendChild(linkTag);
+  getDarkCssElement().disabled = '';
 };
 
 // 删除夜间模式
 const deleteDarkMode = () => {
-  getDarkStyleIsExist().remove();
+  getDarkCssElement().disabled = 'true';
 };
 
+const validColorModeKeys = {
+  dark: true,
+  light: false,
+};
 
-//应用夜间模式
-const applyCustomdDarkMode = mode => {
-  const currentMode = mode || getLS(nowMode);
-  
-  if (currentMode === "light" && !getDarkStyleIsExist()) {
-    addDarkMode();
-  } else if (currentMode === "dark" && getDarkStyleIsExist()) {
-    deleteDarkMode();
+const modeChange = () => {
+  let currentMode = getLS('nowMode');
+
+  if (validColorModeKeys[currentMode] === undefined) {
+    currentMode = getModeFromSystem();
   }
-};
-
-//获取转换后的当前模式
-const toggleMode = () => {
-  let currentMode = getLS(nowMode);
 
   if (validColorModeKeys[currentMode]) {
-    currentMode = inverMode[currentMode];
-  } else if (currentMode === null) {
-    currentMode = inverMode[getModeFromSystem()];
+    deleteDarkMode();
+    setLS('nowMode', 'light');
   } else {
-    return;
+    addDarkMode();
+    setLS('nowMode', 'dark');
   }
-
-  setLS(nowMode, currentMode);
-
-  return currentMode;
 };
 
-applyCustomdDarkMode();
+(() => {
+  if (getLS('nowMode') === null || getLS('nowMode') === 'system') {
+    const mode = getModeFromSystem();
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-  if (event.matches) {
-    if (getDarkStyleIsExist()) {
-      return;
-    } else {
+    if (validColorModeKeys[mode]) {
+      // 设置为该模式
       addDarkMode();
-      setLS(nowMode, "light");
-    }
-  } else {
-    if (!getDarkStyleIsExist()) {
-      return;
     } else {
       deleteDarkMode();
-      setLS(nowMode, "dark");
     }
+  }
 
+  if (getLS('nowMode') === 'dark') {
+    addDarkMode();
+  }
+})();
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+  if (e.matches) {
+    addDarkMode();
+    setLS('nowMode', 'system');
+  } else {
+    deleteDarkMode();
+    setLS('nowMode', 'system');
   }
 });
