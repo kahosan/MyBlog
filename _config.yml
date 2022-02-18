@@ -175,6 +175,6 @@ image_minifier:
 # lazyload:
 #   enable: false
 #   onlypost: false # optional
-#   loadingImg: https://cdn.jsdelivr.net/npm/skx@0.0.9/img/lazy.gif #/images/loading.gif
+#   loadingImg: https://npm.elemecdn.com/skx@0.0.9/img/lazy.gif #/images/loading.gif
 #   isSPA: false # optional
 #   preloadRatio: 3 # optional, default is 1
