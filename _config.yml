@@ -106,6 +106,7 @@ plugin:
   - hexo-generator-feed
   - hexo-asset-image
   - hexo-toc
+  - hexo-generator-robotstxt
   # ... other plugins you'd like to enable
 
 # Generate archive page
@@ -189,3 +190,17 @@ sitemap:
   rel: false
   tags: true
   categories: true
+
+#robots
+robotstxt:
+  useragent: "*"
+  disallow:
+    - /ping
+    - /beacon
+    - /js/jquery.js
+    - /data
+    - /disqus
+    - '*.md'
+  allow:
+    - /
+  sitemap: https://blog.kahosan.top/sitemap.xml

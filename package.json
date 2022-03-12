@@ -21,6 +21,7 @@
     "hexo-generator-category-enhance": "^0.1.6",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^2.0.0",
+    "hexo-generator-robotstxt": "^0.2.0",
     "hexo-generator-search": "^2.4.1",
     "hexo-generator-searchdb": "^1.3.3",
     "hexo-generator-sitemap": "^3.0.1",
