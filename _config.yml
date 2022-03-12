@@ -178,3 +178,14 @@ image_minifier:
 #   loadingImg: https://npm.elemecdn.com/skx@0.0.9/img/lazy.gif #/images/loading.gif
 #   isSPA: false # optional
 #   preloadRatio: 3 # optional, default is 1
+
+#sitemap
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template.xml
+  template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
