@@ -4,6 +4,7 @@ workers_dev = false
 account_id = "$CF_ACCOUNT_ID"
 route = "blog.kahosan.top/*"
 zone_id = "$CF_ZONE_ID"
+compatibility_date = "2022-03-20"
 
 [site]
 bucket = "./public"
