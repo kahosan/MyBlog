@@ -21,8 +21,8 @@ $code-font-family: monofoki, Menlo, Monaco, Consolas, "Courier New", monospace;
   --foregroundColor: hsla(0, 0%, 100%, 0.86);
   --foregroundColor-darken: #000;
   --foregroundColor-darken-a: #3f587d !important;
-  --titlegroundColor: hsla(0, 0%, 100%, 0.96);
-  --title-h2groundColor: hsla(0, 0%, 100%, 0.9);
+  --titlegroundColor: rgb(218, 218, 219);
+  //--title-h2groundColor: hsla(0, 0%, 100%, 0.9);
   //var(--pregroundColor): #3c495b;
   --pregroundColor: #282c34;
   --codegroundColor: #363a42;
@@ -31,16 +31,10 @@ $code-font-family: monofoki, Menlo, Monaco, Consolas, "Courier New", monospace;
 
 h1 {
   font-size: 2.2em;
-  font-weight: 600;
-  font-family: $fontList;
-  color: var(--titlegroundColor);
 }
 
 h2 {
   font-size: 1.75em;
-  font-weight: 600;
-  font-family: $fontList;
-  color: var(--titlegroundColor);
 }
 
 h3 {
@@ -59,13 +53,15 @@ h6 {
   font-size: 0.85em;
 }
 
+h1,
+h2,
 h3,
 h4,
 h5,
 h6,
 th {
   font-family: $fontList;
-  color: var(--title-h2groundColor);
+  color: var(--titlegroundColor);
   font-weight: 600;
 }
 
@@ -108,6 +104,13 @@ code {
   border-radius: 2px;
   font-size: 15px;
   font-family: $code-font-family;
+}
+
+code.hljs {
+  word-break: normal;
+  white-space: pre;
+  display: block;
+  overflow-x: auto;
 }
 
 iframe {

@@ -487,6 +487,13 @@ code {
   font-family: $code-font-family;
 }
 
+code.hljs {
+  word-break: normal;
+  white-space: pre;
+  display: block;
+  overflow-x: auto;
+}
+
 figure {
   .gutter pre {
     border-bottom-right-radius: 0;
