@@ -1,6 +1,6 @@
 ---
 title: JavaScript 获取明天的日期
-date: 2022-04-27 14:26:38
+date: 2022-04-26 14:26:38
 tags: [日期, Tips]
 categories: [JavaScript]
 ---
@@ -20,6 +20,7 @@ const tomorrow = new Date(curTime + 24 * 60 * 60 * 1000).getTime();
 ```
 
 或者用 `setDate()` 方法，像这样
+
 ```javascript
 const date = new Date();
 const tomorrow = date.setDate(date.getDate() + 1);

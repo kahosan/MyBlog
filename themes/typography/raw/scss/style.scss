@@ -2,29 +2,24 @@
 // var(--foregroundColor): #2e405b;
 // var(--codegroudColor): #e6e4e4;
 // var(--meguminGroundColor): #ff4b44;
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600");
-@import "animation";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600');
+@import 'animation';
 @font-face {
   font-family: 'monofki';
   font-style: normal;
   src: url('/fonts/monofoki.ttf') format('truetype');
 }
 
-$fontList: "Trebuchet MS", "Source Sans Pro",
-"Helvetica",
-"Helvetica Neue",
-"PingFang SC",
-sans-serif;
+$fontList: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB,
+  Source Han Sans SC, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, WenQuanYi Zen Hei, Helvetica Neue, Arial,
+  sans-serif;
 
-$code-font-family: monofoki, Menlo, Monaco, Consolas, "Courier New", monospace;
+$code-font-family: monofoki, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
-$titleFontList: "Trebuchet MS",
-"Source Han Serif SC",
-serif;
+$titleFontList: 'Trebuchet MS', 'Source Han Serif SC', serif;
 
 $verticalPrimaryPaddingTopPatch: 0;
 $verticalSecondaryPaddingTopPatch: 1px;
-
 
 :root {
   color-scheme: light;
@@ -328,8 +323,8 @@ a {
   color: var(--foregroundColor) !important;
   border-bottom: none;
   text-decoration: none !important;
-  transition: all .3s ease;
-  box-shadow: 0 -2px var(--meguminGroundColor)inset;
+  transition: all 0.3s ease;
+  box-shadow: 0 -2px var(--meguminGroundColor) inset;
 }
 
 .post-container a:not(.a-title-link, .a-tag, .headerlink, #more):hover,
@@ -339,8 +334,8 @@ a {
 
 .post-container a:not(.a-title-link, .a-tag, .headerlink, #more):hover {
   opacity: 1;
-//  transition: all .3s ease;
-  box-shadow: 0 -8.8px var(--meguminGroundColor)inset;
+  //  transition: all .3s ease;
+  box-shadow: 0 -8.8px var(--meguminGroundColor) inset;
 }
 
 .a-title {
@@ -409,10 +404,10 @@ img {
 }
 
 img.lazy {
-  -webkit-transition: -webkit-filter 375ms ease-in .25s;
-  transition: -webkit-filter 375ms ease-in .25s;
-  transition: filter 375ms ease-in .25s;
-  transition: filter 375ms ease-in .25s, -webkit-filter 375ms ease-in .25s;
+  -webkit-transition: -webkit-filter 375ms ease-in 0.25s;
+  transition: -webkit-filter 375ms ease-in 0.25s;
+  transition: filter 375ms ease-in 0.25s;
+  transition: filter 375ms ease-in 0.25s, -webkit-filter 375ms ease-in 0.25s;
 }
 
 img.lazy:not(.loaded) {
@@ -420,7 +415,6 @@ img.lazy:not(.loaded) {
   filter: blur(8px);
   padding-bottom: 40%;
 }
-
 
 footer {
   margin-top: 10px;
@@ -461,7 +455,7 @@ figure {
   overflow: scroll;
 }
 
-figure>table {
+figure > table {
   width: 100%;
 }
 
@@ -666,10 +660,12 @@ figure {
   }
 }
 
-
 @media only screen and (max-height: 860px) {
+  .site-title-links {
+    margin-top: 30px;
+  }
   .site-title-large {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .site-title-small {
@@ -677,7 +673,7 @@ figure {
   }
 
   .site-title-links ul li {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.3;
   }
 
@@ -686,14 +682,14 @@ figure {
   }
 
   .side-container {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    // padding-top: 40px;
+    // padding-bottom: 20px;
   }
 
   .main-container {
-    width: 100%;
-  //  padding-top: 40px;
-    padding-bottom: 60px;
+    // width: 100%;
+    // padding-top: 40px;
+    // padding-bottom: 60px;
   }
 }
 

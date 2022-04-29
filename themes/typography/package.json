@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo 'No tests' && exit",
     "build": "node-sass raw/scss -o source/css --output-style compressed && postcss source/css -u autoprefixer -r",
+    "builds": "sass raw/scss:source/css -s compressed --no-source-map && postcss source/css -u autoprefixer -r",
     "scss-compile": "npm run build",
     "watch": "node-sass -w raw/scss -o source/css"
   },
@@ -26,7 +27,7 @@
   "homepage": "https://github.com/SumiMakito/hexo-theme-typography/README.md",
   "dependencies": {
     "autoprefixer": "^9.2.0",
-    "node-sass": "^6.0.1",
+    "sass": "^1.51.0",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
     "scss-compile": "^0.1.7",
