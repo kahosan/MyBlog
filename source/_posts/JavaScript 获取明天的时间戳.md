@@ -15,8 +15,10 @@ categories: [JavaScript]
 研究了下发现有两个办法，一个是用 `new Date()` 构造函数，像这样
 
 ```javascript
-const curTime = new Date.getTime();
-const tomorrow = new Date(curTime + 24 * 60 * 60 * 1000).getTime();
+const date = new Date()
+const day = 1
+// 构造出来的日期默认是 00:00 有需要可以添加时、分、秒的参数
+const tommorrow = new Date(date.getFullYear(), date.getMonth(), date.getDate() + day)
 ```
 
 或者用 `setDate()` 方法，像这样
@@ -26,4 +28,5 @@ const date = new Date();
 const tomorrow = date.setDate(date.getDate() + 1);
 ```
 
-第一个比较粗暴，我推荐使用第二个方法，更方便的获取 n 天后的时间戳
+> 22/6/3 更新
+> 根据时区和夏令时的不同，时间转换似乎会出问题，我没有去测试过（毕竟中国也不实行夏令时），有兴趣可以去 [stackoverflow](https://stackoverflow.com/questions/3674539/incrementing-a-date-in-javascript) 或者 [这篇文章](https://zhuanlan.zhihu.com/p/346276216) 查询
