@@ -12,7 +12,6 @@ specifiers:
   hexo-generator-sitemap: ^3.0.1
   hexo-generator-tag: ^1.0.0
   hexo-minify: ^1.2.3
-  hexo-renderer-ejs: ^1.0.0
   hexo-renderer-marked: ^4.1.0
   hexo-renderer-pug: ^2.0.0
   hexo-server: ^2.0.0
@@ -29,7 +28,6 @@ dependencies:
   hexo-generator-sitemap: 3.0.1
   hexo-generator-tag: 1.0.0
   hexo-minify: 1.2.3
-  hexo-renderer-ejs: 1.0.0
   hexo-renderer-marked: 4.1.0
   hexo-renderer-pug: 2.0.0
   hexo-server: 2.0.0
@@ -761,12 +759,6 @@ packages:
     resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
     dev: false
 
-  /ejs/2.7.4:
-    resolution: {integrity: sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==}
-    engines: {node: '>=0.10.0'}
-    requiresBuild: true
-    dev: false
-
   /electron-to-chromium/1.4.146:
     resolution: {integrity: sha512-4eWebzDLd+hYLm4csbyMU2EbBnqhwl8Oe9eF/7CBDPWcRxFmqzx4izxvHH+lofQxzieg8UbB8ZuzNTxeukzfTg==}
     dev: false
@@ -1192,13 +1184,6 @@ packages:
   /hexo-pagination/1.0.0:
     resolution: {integrity: sha512-miEVFgxchPr2qNWxw0JWpJ9R/Yaf7HjHBZVjvCCcqfbsLyYtCvIfJDxcEwz1sDOC/fLzYPqNnhUI73uNxBHRSA==}
     engines: {node: '>=8.6.0'}
-    dev: false
-
-  /hexo-renderer-ejs/1.0.0:
-    resolution: {integrity: sha512-O925i69FG4NYO62oWORcPhRZZX0sPx1SXGKUS5DaR/lzajyiXH5i2sqnkj0ya0rNLXIy/D7Xmt7WbFyuQx/kKQ==}
-    engines: {node: '>=8.6.0'}
-    dependencies:
-      ejs: 2.7.4
     dev: false
 
   /hexo-renderer-marked/4.1.0:
