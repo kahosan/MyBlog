@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   autoprefixer: ^9.2.0
@@ -267,10 +267,20 @@ packages:
 
   /debug/0.7.4:
     resolution: {integrity: sha1-BuHqgILCyxTjmAbiLi9vdX+Srzk=}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dev: false
 
   /debug/0.8.1:
     resolution: {integrity: sha1-IP9NJvXkIstoobrLu2EDmtjBwTA=}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dev: false
 
   /delayed-stream/1.0.0:
@@ -465,6 +475,8 @@ packages:
       debug: 0.7.4
       extract-github: 0.0.5
       mana: 0.1.41
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /glob-parent/5.1.2:
@@ -629,6 +641,8 @@ packages:
       fusing: 0.2.3
       githulk: 0.0.7
       npm-registry: 0.1.13
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /lilconfig/2.0.5:
@@ -711,6 +725,8 @@ packages:
       licenses: 0.0.20
       mana: 0.1.41
       semver: 2.2.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /num2fraction/1.2.2:
@@ -939,6 +955,8 @@ packages:
     resolution: {integrity: sha1-P4En15wqbWNYJttCjFCBWrYBLn0=}
     dependencies:
       npm-registry: 0.1.13
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /semver/2.2.1:

@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'No tests' && exit",
-    "build": "node-sass raw/scss -o source/css --output-style compressed && postcss source/css -u autoprefixer -r",
-    "builds": "sass raw/scss:source/css -s compressed --no-source-map && postcss source/css -u autoprefixer -r",
+    "build": "sass raw/scss:source/css -s compressed --no-source-map && postcss source/css -u autoprefixer -r",
     "scss-compile": "npm run build",
-    "watch": "node-sass -w raw/scss -o source/css"
+    "watch": "sass --watch raw/scss:source/css"
   },
   "repository": {
     "type": "git",
