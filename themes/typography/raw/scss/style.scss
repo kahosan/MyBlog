@@ -509,6 +509,28 @@ figure {
   }
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+th {
+  &[align="center"] {
+    text-align: center;
+  }
+
+  &[align="right"] {
+    text-align: right;
+  }
+}
+
+td, th {
+  border: 1px solid var(--foregroundColor);
+  padding: 8px;
+}
+
+
 @media (max-width: 768px) {
   body {
     font-size: 15px;

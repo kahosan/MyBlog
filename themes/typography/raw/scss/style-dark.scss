@@ -114,6 +114,10 @@ iframe {
   color-scheme: light;
 }
 
+td, th {
+  border: 1px solid var(--codegroundColor);
+}
+
 /*
 
 Atom One Dark by Daniel Gamage

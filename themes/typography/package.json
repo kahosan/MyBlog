@@ -7,7 +7,7 @@
     "test": "echo 'No tests' && exit",
     "build": "sass raw/scss:source/css -s compressed --no-source-map && postcss source/css -u autoprefixer -r",
     "scss-compile": "npm run build",
-    "watch": "sass --watch raw/scss:source/css"
+    "watch": "sass --watch --no-source-map raw/scss:source/css"
   },
   "repository": {
     "type": "git",
