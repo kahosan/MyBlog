@@ -1,5 +1,5 @@
 ---
-title: TypeScript 使用 tsc 编译成 JavaScrip 后的 Alias 踩坑之旅
+title: TypeScript 使用 tsc 编译成 JavaScript 后的 Alias 踩坑之旅
 date: 2022-04-27 14:26:38
 tags: [踩坑, 编译]
 categories: [TypeScript]
@@ -50,7 +50,7 @@ require('module-alias/register')
 中文搜索是靠不住了，接着去 stackoverflow 看了下
 找到一个两年前的[问题](https://stackoverflow.com/questions/59179787/tsc-doesnt-compile-alias-paths)。看来这个也有蛮久远了，到现在都还没解决
 
-也是有两个答案，使用 `typescript` 和 `@zerollup/ts-transform-paths` 或者 `tsc-alias` 。看名字我觉得 `tsc-alias` 能直接解决我的问题了
+也是有两个答案，使用 `ttypescript` 和 `@zerollup/ts-transform-paths` 或者 `tsc-alias` 。看名字我觉得 `tsc-alias` 能直接解决我的问题了
 
 使用方法很简单，安装下 `tsc-alias` 然后使用 `tsc && tsc-alias` 进行构建就可以了。
 
