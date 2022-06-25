@@ -7,7 +7,7 @@
 @font-face {
   font-family: 'monofoki';
   font-style: normal;
-  src: url('/fonts/monofoki.ttf') format('truetype');
+  src: url('https://unpkg.com/xfb/fonts/monofoki.ttf') format('truetype');
 }
 
 $fontList: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB,
