@@ -26,30 +26,6 @@ $code-font-family: monofoki, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --meguminGroundColor: #ff4b44;
 }
 
-h1 {
-  font-size: 2.2em;
-}
-
-h2 {
-  font-size: 1.75em;
-}
-
-h3 {
-  font-size: 1.55em;
-}
-
-h4 {
-  font-size: 1.25em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 0.85em;
-}
-
 h1,
 h2,
 h3,
@@ -114,10 +90,22 @@ iframe {
   color-scheme: light;
 }
 
-td, th {
-  border: 1px solid var(--codegroundColor);
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid var(--codegroundColor);
+  border-left: 1px solid var(--codegroundColor);
 }
 
+td, th {
+  border: 1px solid var(--codegroundColor);
+  border-top: none;
+  border-left: none;
+}
+
+hr {
+  border-color: #575757;
+}
 /*
 
 Atom One Dark by Daniel Gamage

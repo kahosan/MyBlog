@@ -140,7 +140,7 @@ body {
   width: 60%;
   text-align: left;
   margin: 0;
-  padding: 80px 40px 80px 60px;
+  padding: 60px 40px 80px 60px;
   overflow: hidden;
   float: left;
 
@@ -172,7 +172,7 @@ body {
   transform: rotate(0deg);
   text-align: left;
   float: right;
-  padding-top: 80px;
+  padding-top: 60px;
   width: 35%;
 }
 
@@ -242,7 +242,7 @@ body {
 }
 
 .site-title-links {
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: bold;
   font-style: normal;
   // margin: 0;
@@ -510,9 +510,20 @@ figure {
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  margin: 30px 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid var(--foregroundColor);
+  border-left: 1px solid var(--foregroundColor);
+}
 
+ul {
+  padding-left: 15px;
+}
+
+li>p {
+  margin-bottom: 0px;
 }
 
 th {
@@ -526,8 +537,14 @@ th {
 }
 
 td, th {
+  padding: 8px 12px;
   border: 1px solid var(--foregroundColor);
-  padding: 8px;
+  border-top: none;
+  border-left: none;
+}
+
+hr {
+  border-color: #c2c2c2;
 }
 
 
@@ -682,7 +699,7 @@ td, th {
   }
 }
 
-@media only screen and (max-height: 860px) {
+@media only screen and (max-width: 860px) {
   .site-title-links {
     margin-top: 30px;
   }
@@ -702,48 +719,9 @@ td, th {
   .site-nav-footer-br {
     display: none;
   }
-
-  .side-container {
-    // padding-top: 40px;
-    // padding-bottom: 20px;
-  }
-
-  .main-container {
-    // width: 100%;
-    // padding-top: 40px;
-    // padding-bottom: 60px;
-  }
 }
 
-@media only screen and (max-height: 600px) {
-  // body {
-  //   line-height: normal;
-  // }
-
-  // h1 {
-  //   font-size: 40px;
-  // }
-
-  // h2 {
-  //   font-size: 34px;
-  // }
-
-  // h3 {
-  //   font-size: 28px;
-  // }
-
-  // h4 {
-  //   font-size: 22px;
-  // }
-
-  // h5 {
-  //   font-size: 16px;
-  // }
-
-  // h6 {
-  //   font-size: 14px;
-  // }
-
+@media only screen and (max-width: 600px) {
   .site-title-large {
     font-size: 38px;
   }
@@ -850,6 +828,17 @@ td, th {
 
   .site-bottom-footer {
     display: block !important;
+  }
+}
+
+@media only screen and (max-height: 768px) {
+  .side-container {
+    position: relative;
+  }
+  
+  .site-title-links {
+    position: sticky;
+    top: 20px;
   }
 }
 

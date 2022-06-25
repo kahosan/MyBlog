@@ -12,7 +12,6 @@ html(lang="zh-CN")
                     div.visible-xs.site-bottom-footer
                         include footer
 
-
         script(src="https://npm.elemecdn.com/jquery@3.1.0/dist/jquery.min.js")
         script(src="https://npm.elemecdn.com/bootstrap@3.3.7/dist/js/bootstrap.min.js")
         script(src="https://npm.elemecdn.com/jquery-migrate@1.2.1/dist/jquery-migrate.min.js")
@@ -25,4 +24,6 @@ html(lang="zh-CN")
                 elements_selector: ".lazy",
                 threshold: 0
             };
+        script.
+            document.querySelector(".row").style.height = document.querySelector(".main-container").offsetHeight + "px";
     
