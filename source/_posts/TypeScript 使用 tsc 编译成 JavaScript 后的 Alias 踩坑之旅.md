@@ -1,5 +1,5 @@
 ---
-title: TypeScript 使用 tsc 编译成 JavaScrip 后的 Alias 踩坑之旅
+title: TypeScript 使用 tsc 编译成 JavaScript 后的 Alias 踩坑之旅
 date: 2022-04-27 14:26:38
 tags: [踩坑, 编译]
 categories: [TypeScript]
