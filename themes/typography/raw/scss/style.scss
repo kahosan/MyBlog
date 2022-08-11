@@ -172,8 +172,7 @@ body {
   margin: 0;
   transform: rotate(0deg);
   text-align: left;
-  float: right;
-  padding-top: 60px;
+  padding-top: 50px;
   width: 35%;
 }
 
@@ -200,15 +199,14 @@ body {
   font-style: normal;
   width: auto;
   height: auto;
-  margin: 0 0 0 -2px;
   text-align: left;
-  font-size: 0.5em;
-  padding: 0 0 50px 0;
+  font-size: 2rem;
+  padding: 0 0 25px 0;
   border-left: solid var(--foregroundColor) 2px;
   transition: padding 0.8s ease 0s, background 0.8s ease 0s;
 
   &:hover {
-    padding: 15px 0 35px 0;
+    padding: 5px 0 20px 0;
     color: var(--backgroundColor) !important;
     background: var(--foregroundColor) !important;
     border-left: solid var(--foregroundColor) 2px;
@@ -233,13 +231,10 @@ body {
 }
 
 .site-title-large {
-  font-size: 50px;
-  padding-top: $verticalPrimaryPaddingTopPatch;
 }
 
 .site-title-small {
-  font-size: 30px;
-  padding-top: $verticalSecondaryPaddingTopPatch;
+  padding-top: 1rem ;
 }
 
 .site-title-links {
@@ -253,19 +248,32 @@ body {
   // bottom: -25px;
 }
 
-.site-title-links ul {
-  width: 100%;
+.site-title-links ul.links {
+  width: 10rem;
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  column-gap: 5px;
+}
+
+.site-title-links ul.icon {
   list-style: none;
   padding: 0;
 }
 
 .site-title-links ul li {
-  margin: 5px 0;
+  margin: 0;
   font-size: 18px;
 }
 
 .site-title-links a {
   border-bottom: solid var(--foregroundColor) 2px;
+}
+
+.site-nav-footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
 }
 
 .no-margin-left {
@@ -379,6 +387,7 @@ blockquote {
 
   a {
     border-bottom: solid transparent 2px;
+    padding-right: 5px;
 
     &:hover {
       color: var(--foregroundColor-darken-a) !important;
@@ -548,6 +557,17 @@ hr {
   border-color: #c2c2c2;
 }
 
+@media (min-height: 900px) {
+  .site-title-links ul.links {
+    columns: unset;
+    column-gap: unset;
+  }
+  
+  .site-title-links ul.links li {
+    margin-bottom: 10px;
+  }
+}
+
 
 @media (max-width: 768px) {
   body {
@@ -557,34 +577,6 @@ hr {
   blockquote p {
     font-size: 16px;
   }
-
-  // body {
-  //   line-height: normal;
-  // }
-
-  // h1 {
-  //   font-size: 40px;
-  // }
-
-  // h2 {
-  //   font-size: 34px;
-  // }
-
-  // h3 {
-  //   font-size: 28px;
-  // }
-
-  // h4 {
-  //   font-size: 22px;
-  // }
-
-  // h5 {
-  //   font-size: 16px;
-  // }
-
-  // h6 {
-  //   font-size: 14px;
-  // }
 
   .site-title-large {
     font-size: 38px;
@@ -653,7 +645,7 @@ hr {
     text-align: center;
   }
 
-  .site-title-links ul li {
+  .site-title-links ul.links li {
     display: inline;
     margin: 0 3px;
     font-size: 16px;
@@ -711,8 +703,14 @@ hr {
   .site-title-small {
     font-size: 20px;
   }
+  
+  .site-title-links ul.links {
+    width: 100%;
+    columns: unset;
+    column-gap: unset;
+  }
 
-  .site-title-links ul li {
+  .site-title-links ul.links li {
     font-size: 16px;
     line-height: 1.3;
   }
@@ -789,6 +787,12 @@ hr {
     text-align: center;
   }
 
+  .site-title-links ul.links {
+    width: 100%;
+    columns: unset;
+    column-gap: unset;
+  }
+
   .site-title-links ul li {
     display: inline;
     margin: 0 3px;
@@ -829,17 +833,6 @@ hr {
 
   .site-bottom-footer {
     display: block !important;
-  }
-}
-
-@media only screen and (max-height: 768px) {
-  .side-container {
-    position: relative;
-  }
-  
-  .site-title-links {
-    position: sticky;
-    top: 20px;
   }
 }
 

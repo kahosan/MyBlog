@@ -1,4 +1,4 @@
-div#side-bar.col-sm-3.col-xs-12.side-container
+div#side-bar.side-container
     div.vertical-text.site-title
         h3.site-title-small(tabindex="-1")
             a.a-title(href=config.root)= theme.title_secondary
@@ -7,3 +7,5 @@ div#side-bar.col-sm-3.col-xs-12.side-container
         //h6(onclick="triggerSiteNav()") Trigger
     //br.visible-lg.visible-md.visible-sm
     include nav
+    div.site-nav-footer
+        include footer

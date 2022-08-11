@@ -1,5 +1,5 @@
 div#site-nav.site-title-links
-    ul
+    ul.links
         li
             if is_home()
                 a.current(href=config.root)= __('Home')
@@ -36,7 +36,8 @@ div#site-nav.site-title-links
         //-         a(href=url_for(config.search_dir))= __('Search')
         include ../mixins
         +make_page_links()
-        li.soc
+    ul.icon
+        li.soc 
             if theme.github
                 a(href="https://github.com/" + theme.github, target="_blank", rel="noopener noreferrer")
                     i.fa.fa-github &nbsp;
@@ -55,7 +56,3 @@ div#site-nav.site-title-links
             if theme.mode
                 a(href="javascript:modeChange();", aria-label="切换暗色模式", id="darkmode")
                     i.fa.fa-adjust &nbsp;
-                    
-    div.visible-lg.visible-md.visible-sm.site-nav-footer
-        //br.site-nav-footer-br
-        include footer
