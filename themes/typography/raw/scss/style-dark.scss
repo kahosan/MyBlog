@@ -6,11 +6,6 @@
 // var(--pregroundColor): #282c34;
 // var(--codegroundColor): #363a42;
 // var(--meguminGroundColor): #ff4b44;
-$fontList: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB,
-  Source Han Sans SC, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, WenQuanYi Zen Hei, Helvetica Neue, Arial,
-  sans-serif;
-
-$code-font-family: monofoki, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 :root {
   color-scheme: dark;
@@ -33,57 +28,23 @@ h4,
 h5,
 h6,
 th {
-  font-family: $fontList;
   color: var(--titlegroundColor);
-  font-weight: 600;
 }
 
 body {
-  font-size: 17px;
-  line-height: 1.7;
-
-  // @if lightness($backgroundColor) >50 {
-  //   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
-  // } @else {
-  //   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi/P//Py8DpQCXISBxJlING4QaGEdDiQgAEGAAg8sST3LGZYoAAAAASUVORK5CYII=");
-  // }
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi/P//Py8DpQCXISBxJlING4QaGEdDiQgAEGAAg8sST3LGZYoAAAAASUVORK5CYII=");
   background-color: #21252b;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
-  min-height: 100vh;
 }
 
 pre {
   color: var(--pregroundColor) !important;
   background-color: var(--pregroundColor) !important;
   border: 1px solid var(--pregroundColor) !important;
-  padding: 4px;
-  margin-bottom: 20px;
-  font-size: 15px;
-
-  * {
-    font-family: $code-font-family;
-    background: transparent !important;
-  }
 }
 
 code {
-  margin: auto 4px;
   background-color: var(--codegroundColor);
   color: #abb2bf;
-  border-radius: 2px;
-  font-size: 15px;
-  font-family: $code-font-family;
-}
-
-code.hljs {
-  word-break: normal;
-  white-space: pre;
-  display: block;
-  overflow-x: auto;
 }
 
 iframe {
@@ -91,16 +52,12 @@ iframe {
 }
 
 table {
-  border-collapse: separate;
-  border-spacing: 0;
   border-top: 1px solid var(--codegroundColor);
   border-left: 1px solid var(--codegroundColor);
 }
 
 td, th {
   border: 1px solid var(--codegroundColor);
-  border-top: none;
-  border-left: none;
 }
 
 hr {

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap");
 @keyframes fadein {
   from {
     opacity: 0;
@@ -279,12 +280,12 @@
 html,
 body,
 span {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Source Han Sans SC, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, WenQuanYi Zen Hei, Helvetica Neue, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", sans-serif;
   color: var(--foregroundColor);
 }
 
 p {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Source Han Sans SC, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, WenQuanYi Zen Hei, Helvetica Neue, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", sans-serif;
   color: var(--foregroundColor);
   display: block;
   margin-block-start: 1em;
@@ -324,7 +325,7 @@ h4,
 h5,
 h6,
 th {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Source Han Sans SC, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, WenQuanYi Zen Hei, Helvetica Neue, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK", "PingFang TC", sans-serif;
   color: var(--foregroundColor);
   font-weight: 600;
 }
@@ -352,6 +353,7 @@ html {
 body {
   font-size: 17px;
   line-height: 1.7;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
   background-color: #f4f4f4;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -372,10 +374,10 @@ body {
 }
 
 .main-container {
-  width: 60%;
+  width: 65%;
   text-align: left;
   margin: 0;
-  padding: 60px 40px 80px 60px;
+  padding: 60px 40px 20px 60px;
   overflow: hidden;
   float: left;
 }
@@ -455,7 +457,7 @@ body {
   margin-top: 0;
   margin-left: 10px;
   margin-right: 0;
-  font-family: "Trebuchet MS", "Source Han Serif SC", serif;
+  font-family: "Noto Serif SC", serif;
 }
 
 .site-title-small {
@@ -650,6 +652,7 @@ footer * {
 .post-title {
   font-size: 24px;
   font-weight: bold;
+  max-width: 50rem;
   margin: 3px 0;
 }
 
@@ -755,6 +758,10 @@ hr {
 }
 
 @media (min-height: 900px) {
+  .site-title {
+    font-size: 2.2rem;
+  }
+
   .site-title-links ul.links {
     columns: unset;
     column-gap: unset;
