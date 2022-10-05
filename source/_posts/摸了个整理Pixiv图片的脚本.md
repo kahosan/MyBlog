@@ -16,8 +16,8 @@ categories: [脚本]
 
 ### 使用前  
 
-![old.png](https://npm.elemecdn.com/xfb/img/new/old.png)
+![old.png](https://unpkg.com/xfb/img/new/old.png)
 
 ### 使用后  
 
-![new.png](https://npm.elemecdn.com/xfb/img/new/new.png)
+![new.png](https://unpkg.com/xfb/img/new/new.png)

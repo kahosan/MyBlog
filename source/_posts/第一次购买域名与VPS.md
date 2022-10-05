@@ -20,13 +20,13 @@ categories: [消费]
 
 主页面长这样，咱觉得还挺好看的（其实后台有毒）
 
-{% img https://npm.elemecdn.com/xfb/img/new/Namesilo.png namesilo %}  
+{% img https://unpkg.com/xfb/img/new/Namesilo.png namesilo %}  
 
 <br/>
 
 创建个账号，然后搜索下喜欢的域名是不是已经被购买了，没有的话直接点 Add 然后再点 checkout 购买就行了。
 
-{% img https://npm.elemecdn.com/xfb/img/new/buy.png namesilo %}
+{% img https://unpkg.com/xfb/img/new/buy.png namesilo %}
 
 <br/>
 
@@ -40,7 +40,7 @@ categories: [消费]
 因为没有经验，就买了群友推荐的一个大盘鸡，打算用来做远程下载。
 供应商是 [HotlineServer](https://www.hotlineservers.com/) ，配置如下图：
 
-{% img https://npm.elemecdn.com/xfb/img/new/vps.png namesilo %}
+{% img https://unpkg.com/xfb/img/new/vps.png namesilo %}
 
 <br/>
 
@@ -51,7 +51,7 @@ categories: [消费]
 建议大家登机器第一件事就是把 SSH 密码登入关掉，改用密钥登入，不然鬼知道哪里的人就把你密码破解了拿去挖矿也说不定（
 咱就中招了，CPU 一直 100% ，咕咕噜了一下，
 
-{% img https://npm.elemecdn.com/xfb/img/new/zz.png namesilo %}  
+{% img https://unpkg.com/xfb/img/new/zz.png namesilo %}  
 
 <br/>
 

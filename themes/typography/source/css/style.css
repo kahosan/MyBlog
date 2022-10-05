@@ -521,7 +521,7 @@
   --megumin-color: #ff4b44;
   --font-sans: HarmonyOS_Sans, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Segoe UI Emoji", "Segoe UI Symbol", Helvetica, Arial, sans-serif;
   --title-font: "Noto Serif SC", serif;
-  --code-font: monospace, Menlo, Monaco, Consolas, "Courier New";
+  --code-font: monospace, monofoki, Menlo, Monaco, Consolas, "Courier New";
 }
 
 html,
@@ -542,27 +542,7 @@ p {
 }
 
 h1 {
-  font-size: 2.2em;
-}
-
-h2 {
-  font-size: 1.75em;
-}
-
-h3 {
-  font-size: 1.55em;
-}
-
-h4 {
-  font-size: 1.25em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 0.85em;
+  font-size: 1.375em;
 }
 
 h1,
@@ -578,6 +558,7 @@ th {
 }
 
 html {
+  font-size: unset;
   background: var(--background-color);
 }
 
@@ -598,7 +579,7 @@ html {
 }
 
 body {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.75;
   background: url("data:image/png;base65,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
   background-color: var(--background-color);
@@ -719,7 +700,7 @@ body {
 }
 
 .site-title-links ul.links {
-  width: 10rem;
+  width: 6rem;
   list-style: none;
   padding: 0;
   columns: 2;
@@ -1009,6 +990,11 @@ hr {
   border-color: #c2c2c2;
 }
 
+@media screen and (min-width: 1920px) and (max-width: 2399px) {
+  body {
+    font-size: 1.0625rem;
+  }
+}
 @media (min-height: 900px) {
   .site-title {
     font-size: 2.2rem;
@@ -1099,6 +1085,12 @@ hr {
     text-align: center;
   }
 
+  .site-title-links ul.links {
+    width: 100%;
+    columns: unset;
+    column-gap: unset;
+  }
+
   .site-title-links ul.links li {
     display: inline;
     margin: 0 3px;
@@ -1143,34 +1135,6 @@ hr {
 
   li.soc {
     margin-top: 5px !important;
-  }
-}
-@media only screen and (max-width: 860px) {
-  .site-title-links {
-    margin-top: 30px;
-  }
-
-  .site-title-large {
-    font-size: 36px;
-  }
-
-  .site-title-small {
-    font-size: 20px;
-  }
-
-  .site-title-links ul.links {
-    width: 100%;
-    columns: unset;
-    column-gap: unset;
-  }
-
-  .site-title-links ul.links li {
-    font-size: 16px;
-    line-height: 1.3;
-  }
-
-  .site-nav-footer-br {
-    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1238,12 +1202,6 @@ hr {
     padding: 10px 0;
     margin: 10px 0;
     text-align: center;
-  }
-
-  .site-title-links ul.links {
-    width: 100%;
-    columns: unset;
-    column-gap: unset;
   }
 
   .site-title-links ul li {
