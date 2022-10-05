@@ -9,55 +9,22 @@
 
 :root {
   color-scheme: dark;
-  --backgroundColor: #252d38;
-  --foregroundColor: hsla(0, 0%, 100%, 0.86);
-  --foregroundColor-darken: #000;
-  --foregroundColor-darken-a: #3f587d !important;
-  --titlegroundColor: rgb(218, 218, 219);
-  //--title-h2groundColor: hsla(0, 0%, 100%, 0.9);
-  //var(--pregroundColor): #3c495b;
-  --pregroundColor: #282c34;
-  --codegroundColor: #363a42;
-  --meguminGroundColor: #ff4b44;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-th {
-  color: var(--titlegroundColor);
+  --background-color: #21252b;
+  --foreground-color: hsla(0, 0%, 100%, 0.86);
+  --foreground-color-darken: #000;
+  --foreground-color-darken-a: #3f587d !important;
+  --pre-background-color: #282c34;
+  --code-background-color: #363a42;
+  --code-color: #abb2bf;
 }
 
 body {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi/P//Py8DpQCXISBxJlING4QaGEdDiQgAEGAAg8sST3LGZYoAAAAASUVORK5CYII=");
-  background-color: #21252b;
-}
-
-pre {
-  color: var(--pregroundColor) !important;
-  background-color: var(--pregroundColor) !important;
-  border: 1px solid var(--pregroundColor) !important;
-}
-
-code {
-  background-color: var(--codegroundColor);
-  color: #abb2bf;
+  background-color: var(--background-color);
 }
 
 iframe {
   color-scheme: light;
-}
-
-table {
-  border-top: 1px solid var(--codegroundColor);
-  border-left: 1px solid var(--codegroundColor);
-}
-
-td, th {
-  border: 1px solid var(--codegroundColor);
 }
 
 hr {
