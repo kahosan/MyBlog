@@ -24,7 +24,7 @@ categories: [生活, 技术]
 
 没拍照，借用下网图，一模一样的
 
-{% img https://unpkg.com/xfb/img/new/星际蜗牛C款.jpg 星际蜗牛 %}
+{% img https://npm.elemecdn.com/xfb/img/new/星际蜗牛C款.jpg 星际蜗牛 %}
 
 ## 系统选择
 
@@ -34,7 +34,7 @@ NAS 的系统选择挺多的，比较常见的：黑群晖，True NAS，ESXi，�
 
 系统安装配置之类的就跳过了，网上一搜一大把。
 
-{% img https://unpkg.com/xfb/img/new/ubuntu.png ubuntu %}
+{% img https://npm.elemecdn.com/xfb/img/new/ubuntu.png ubuntu %}
 
 ## 软件配置
 
@@ -123,7 +123,7 @@ NAS 的系统选择挺多的，比较常见的：黑群晖，True NAS，ESXi，�
   ```
 
 受限于咱的发霉皮 3B+，内网只有 160 Mbps 左右的速度，丢人了，，，
-{% img https://unpkg.com/xfb/img/new/speed.png 下载速度 %}
+{% img https://npm.elemecdn.com/xfb/img/new/speed.png 下载速度 %}
 
 ### 下载服务
 
@@ -142,7 +142,7 @@ NAS 的系统选择挺多的，比较常见的：黑群晖，True NAS，ESXi，�
 
 放一张主页图
 
-{% img https://unpkg.com/xfb/img/new/syncthing.png %}
+{% img https://npm.elemecdn.com/xfb/img/new/syncthing.png %}
 
 ### 其他
 
