@@ -442,7 +442,7 @@ body {
 
 .main-container {
   max-width: 620px;
-  margin: 60px 0 20px 0;
+  margin: 60px 100px 20px 0;
   overflow: hidden;
 
   :nth-child(1) {
@@ -454,7 +454,6 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  column-gap: 100px;
 }
 
 .vertical-text {
