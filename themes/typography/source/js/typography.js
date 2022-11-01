@@ -49,10 +49,10 @@
 
 (() => {
     let disqAds = setInterval(() => {
-        $("iframe").each((index, element) => {
+        document.querySelectorAll('iframe').forEach((element) => {
             let id = /dsq-app/.test(element.name)
             let attr = element.hasAttribute("src")
-            
+
             if (id && !attr) {
                 element.remove()
                 clearInterval(disqAds);

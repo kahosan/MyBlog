@@ -356,7 +356,7 @@
   --code-background-color: #e6e4e4;
   --code-color: #383a42;
   --megumin-color: #ff4b44;
-  --font-sans: HarmonyOS_Sans, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif;
+  --font-sans: HarmonyOS_Sans, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif;
   --title-font: 'Noto Serif SC', serif;
   --code-font: monospace, monofoki, Menlo, Monaco, Consolas, 'Courier New';
 }
@@ -419,7 +419,7 @@ body {
   font-size: 1em;
   line-height: 1.75;
 
-  background: url("data:image/png;base65,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
   background-color: var(--background-color);
 
   background-repeat: repeat;
@@ -441,12 +441,9 @@ body {
 }
 
 .main-container {
-  width: 65%;
-  text-align: left;
-  margin: 0;
-  padding: 60px 40px 20px 60px;
+  width: 55%;
+  margin: 60px 40px 20px 0px;
   overflow: hidden;
-  float: left;
 
   :nth-child(1) {
     margin-top: 0;
@@ -455,6 +452,8 @@ body {
 
 .row {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .vertical-text {
@@ -467,16 +466,14 @@ body {
 }
 
 .side-container {
-  height: 100%;
-  position: fixed;
-  right: 0;
+  height: calc(100vh - 50px);
+  width: auto;
+  position: sticky;
+  top: 50px;
   font-style: normal;
   font-size: 1em;
-  margin: 0;
   transform: rotate(0deg);
-  text-align: left;
-  padding-top: 50px;
-  width: 35%;
+  margin: 0;
 }
 
 .ar-year {
@@ -663,6 +660,7 @@ a {
 }
 
 blockquote {
+  font-size: unset;
   border-left: 5px solid #e8c0c0;
 }
 
@@ -780,6 +778,14 @@ pre {
   code {
     font-size: inherit;
     font-weight: 400;
+
+    &::before {
+      content: "";
+    }
+
+    &::after {
+      content: "";
+    }
   }
 
   * {
@@ -789,12 +795,22 @@ pre {
 }
 
 code {
-  margin: auto 4px;
-  background-color: var(--code-background-color);
+  margin: 0;
+  background-color: unset;
   color: var(--code-color);
-  border-radius: 2px;
-  font-size: 0.875em;
   font-family: var(--code-font);
+  font-size: 0.875em;
+  font-weight: 600;
+
+  &::before {
+    content: "`";
+    font-family: 'Menlo'
+  }
+
+  &::after {
+    content: "`";
+    font-family: 'Menlo'
+  }
 }
 
 code.hljs {

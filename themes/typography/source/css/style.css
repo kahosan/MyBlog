@@ -201,62 +201,42 @@
 }
 
 .fadeIn {
-  -webkit-animation: fadein 1s ease-out;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s ease-out;
-  /* Firefox < 16 */
-  -ms-animation: fadein 1s ease-out;
-  /* Internet Explorer */
-  -o-animation: fadein 1s ease-out;
-  /* Opera < 12.1 */
+  -webkit-animation: fadein 1s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s ease-out; /* Firefox < 16 */
+  -ms-animation: fadein 1s ease-out; /* Internet Explorer */
+  -o-animation: fadein 1s ease-out; /* Opera < 12.1 */
   animation: fadein 1s ease-out;
 }
 
 .fadeInRight {
-  -webkit-animation: fadein-right 1s ease-out;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein-right 1s ease-out;
-  /* Firefox < 16 */
-  -ms-animation: fadein-right 1s ease-out;
-  /* Internet Explorer */
-  -o-animation: fadein-right 1s ease-out;
-  /* Opera < 12.1 */
+  -webkit-animation: fadein-right 1s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein-right 1s ease-out; /* Firefox < 16 */
+  -ms-animation: fadein-right 1s ease-out; /* Internet Explorer */
+  -o-animation: fadein-right 1s ease-out; /* Opera < 12.1 */
   animation: fadein-right 1s ease-out;
 }
 
 .fadeInTop {
-  -webkit-animation: fadein-top 1s ease-out;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein-top 1s ease-out;
-  /* Firefox < 16 */
-  -ms-animation: fadein-top 1s ease-out;
-  /* Internet Explorer */
-  -o-animation: fadein-top 1s ease-out;
-  /* Opera < 12.1 */
+  -webkit-animation: fadein-top 1s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein-top 1s ease-out; /* Firefox < 16 */
+  -ms-animation: fadein-top 1s ease-out; /* Internet Explorer */
+  -o-animation: fadein-top 1s ease-out; /* Opera < 12.1 */
   animation: fadein-top 1s ease-out;
 }
 
 .swiftDown {
-  -webkit-animation: swift-down 1s ease-out;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: swift-down 1s ease-out;
-  /* Firefox < 16 */
-  -ms-animation: swift-down 1s ease-out;
-  /* Internet Explorer */
-  -o-animation: swift-down 1s ease-out;
-  /* Opera < 12.1 */
+  -webkit-animation: swift-down 1s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: swift-down 1s ease-out; /* Firefox < 16 */
+  -ms-animation: swift-down 1s ease-out; /* Internet Explorer */
+  -o-animation: swift-down 1s ease-out; /* Opera < 12.1 */
   animation: swift-down 1s ease-out;
 }
 
 .swiftDownReversed {
-  -webkit-animation: swift-down 1s reverse ease-out;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: swift-down 1s reverse ease-out;
-  /* Firefox < 16 */
-  -ms-animation: swift-down 1s reverse ease-out;
-  /* Internet Explorer */
-  -o-animation: swift-down 1s reverse ease-out;
-  /* Opera < 12.1 */
+  -webkit-animation: swift-down 1s reverse ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: swift-down 1s reverse ease-out; /* Firefox < 16 */
+  -ms-animation: swift-down 1s reverse ease-out; /* Internet Explorer */
+  -o-animation: swift-down 1s reverse ease-out; /* Opera < 12.1 */
   animation: swift-down 1s reverse ease-out;
 }
 
@@ -581,7 +561,7 @@ html {
 body {
   font-size: 1em;
   line-height: 1.75;
-  background: url("data:image/png;base65,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
   background-color: var(--background-color);
   background-repeat: repeat;
   background-attachment: fixed;
@@ -602,12 +582,9 @@ body {
 }
 
 .main-container {
-  width: 65%;
-  text-align: left;
-  margin: 0;
-  padding: 60px 40px 20px 60px;
+  width: 55%;
+  margin: 60px 40px 20px 0px;
   overflow: hidden;
-  float: left;
 }
 .main-container :nth-child(1) {
   margin-top: 0;
@@ -615,6 +592,8 @@ body {
 
 .row {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .vertical-text {
@@ -626,16 +605,14 @@ body {
 }
 
 .side-container {
-  height: 100%;
-  position: fixed;
-  right: 0;
+  height: calc(100vh - 50px);
+  width: auto;
+  position: sticky;
+  top: 50px;
   font-style: normal;
   font-size: 1em;
-  margin: 0;
   transform: rotate(0deg);
-  text-align: left;
-  padding-top: 50px;
-  width: 35%;
+  margin: 0;
 }
 
 .ar-year {
@@ -807,6 +784,7 @@ a:focus {
 }
 
 blockquote {
+  font-size: unset;
   border-left: 5px solid #e8c0c0;
 }
 
@@ -916,18 +894,32 @@ pre code {
   font-size: inherit;
   font-weight: 400;
 }
+pre code::before {
+  content: "";
+}
+pre code::after {
+  content: "";
+}
 pre * {
   font-family: var(--code-font);
   background: transparent !important;
 }
 
 code {
-  margin: auto 4px;
-  background-color: var(--code-background-color);
+  margin: 0;
+  background-color: unset;
   color: var(--code-color);
-  border-radius: 2px;
-  font-size: 0.875em;
   font-family: var(--code-font);
+  font-size: 0.875em;
+  font-weight: 600;
+}
+code::before {
+  content: "`";
+  font-family: "Menlo";
+}
+code::after {
+  content: "`";
+  font-family: "Menlo";
 }
 
 code.hljs {
@@ -999,12 +991,10 @@ hr {
   .site-title {
     font-size: 2.2rem;
   }
-
   .site-title-links ul.links {
     columns: unset;
     column-gap: unset;
   }
-
   .site-title-links ul.links li {
     margin-bottom: 10px;
   }
@@ -1013,23 +1003,18 @@ hr {
   body {
     font-size: 15px;
   }
-
   blockquote p {
     font-size: 16px;
   }
-
   .site-title-large {
     font-size: 38px;
   }
-
   .site-title-small {
     font-size: 22px;
   }
-
   .vertical-text {
     writing-mode: horizontal-tb;
   }
-
   .site-title {
     margin: 0;
     font-weight: bolder;
@@ -1042,25 +1027,21 @@ hr {
     text-align: center;
     transition: none;
   }
-
   .site-title * {
     text-align: center;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-
   .site-title:hover {
     color: var(--foreground-color) !important;
     background: transparent !important;
     padding: 0;
     border: none;
   }
-
   .site-title:hover * {
     color: var(--foreground-color) !important;
     background: transparent !important;
   }
-
   .main-container {
     width: 100%;
     text-align: left;
@@ -1069,7 +1050,6 @@ hr {
     padding: 0px 30px;
     overflow: auto;
   }
-
   .side-container {
     padding: 40px 30px 0 30px;
     height: auto;
@@ -1077,62 +1057,50 @@ hr {
     left: 0;
     width: 100%;
   }
-
   .site-title-links {
     position: unset;
     padding: 10px 0;
     margin: 10px 0;
     text-align: center;
   }
-
   .site-title-links ul.links {
     width: 100%;
     columns: unset;
     column-gap: unset;
   }
-
   .site-title-links ul.links li {
     display: inline;
     margin: 0 3px;
     font-size: 16px;
   }
-
   footer {
     padding-top: 30px;
     padding-bottom: 35px;
   }
-
   a {
     padding: 0;
   }
-
   .post-title {
     font-size: 20px;
     font-weight: bold;
     margin: 3px 0;
   }
-
   .post-meta {
     font-size: 14px;
     margin: 10px 0;
   }
-
   .post-abstract {
     font-size: 16px;
   }
-
   .soc {
     display: block !important;
   }
-
   .site-nav-footer {
     display: none !important;
   }
-
   .site-bottom-footer {
     display: block !important;
   }
-
   li.soc {
     margin-top: 5px !important;
   }
@@ -1141,15 +1109,12 @@ hr {
   .site-title-large {
     font-size: 38px;
   }
-
   .site-title-small {
     font-size: 22px;
   }
-
   .vertical-text {
     writing-mode: horizontal-tb;
   }
-
   .site-title {
     margin: 0;
     font-weight: bolder;
@@ -1162,25 +1127,21 @@ hr {
     text-align: center;
     transition: none;
   }
-
   .site-title * {
     text-align: center;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-
   .site-title:hover {
     color: var(--foreground-color) !important;
     background: transparent !important;
     padding: 0;
     border: none;
   }
-
   .site-title:hover * {
     color: var(--foreground-color) !important;
     background: transparent !important;
   }
-
   .main-container {
     width: 100%;
     text-align: left;
@@ -1189,59 +1150,48 @@ hr {
     padding: 0px 30px;
     overflow: auto;
   }
-
   .side-container {
     padding: 40px 30px 0 30px;
     height: auto;
     position: relative;
     left: 0;
   }
-
   .site-title-links {
     position: unset;
     padding: 10px 0;
     margin: 10px 0;
     text-align: center;
   }
-
   .site-title-links ul li {
     display: inline;
     margin: 0 3px;
     font-size: 16px;
   }
-
   footer {
     padding-top: 30px;
     padding-bottom: 35px;
   }
-
   a {
     padding: 0;
   }
-
   .post-title {
     font-size: 20px;
     font-weight: bold;
     margin: 3px 0;
   }
-
   .post-meta {
     font-size: 14px;
     margin: 10px 0;
   }
-
   .post-abstract {
     font-size: 16px;
   }
-
   .soc {
     display: block !important;
   }
-
   .site-nav-footer {
     display: none !important;
   }
-
   .site-bottom-footer {
     display: block !important;
   }
