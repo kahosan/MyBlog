@@ -1,25 +1,25 @@
 :root {
-  color-scheme: dark;
-  --background-color: #21252b;
-  --foreground-color: hsla(0, 0%, 100%, 0.86);
-  --foreground-color-darken: #000;
+  color-scheme: dark !important;
+  --background-color: #21252b !important;
+  --foreground-color: hsla(0, 0%, 100%, 0.86) !important;
+  --foreground-color-darken: #000 !important;
   --foreground-color-darken-a: #3f587d !important;
-  --pre-background-color: #282c34;
-  --code-background-color: #363a42;
-  --code-color: #abb2bf;
+  --pre-background-color: #282c34 !important;
+  --code-background-color: #363a42 !important;
+  --code-color: #abb2bf !important;
 }
 
 body {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi/P//Py8DpQCXISBxJlING4QaGEdDiQgAEGAAg8sST3LGZYoAAAAASUVORK5CYII=");
-  background-color: var(--background-color);
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi/P//Py8DpQCXISBxJlING4QaGEdDiQgAEGAAg8sST3LGZYoAAAAASUVORK5CYII=") !important;
+  background-color: var(--background-color) !important;
 }
 
 iframe {
-  color-scheme: light;
+  color-scheme: light !important;
 }
 
 hr {
-  border-color: #575757;
+  border-color: #575757 !important;
 }
 
 /*

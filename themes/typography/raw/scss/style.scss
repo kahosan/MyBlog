@@ -441,8 +441,8 @@ body {
 }
 
 .main-container {
-  width: 55%;
-  margin: 60px 40px 20px 0px;
+  max-width: 620px;
+  margin: 60px 0 20px 0;
   overflow: hidden;
 
   :nth-child(1) {
@@ -454,6 +454,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  column-gap: 100px;
 }
 
 .vertical-text {
@@ -466,14 +467,14 @@ body {
 }
 
 .side-container {
-  height: calc(100vh - 50px);
-  width: auto;
+  height: 100vh;
   position: sticky;
-  top: 50px;
+  top: 0;
   font-style: normal;
   font-size: 1em;
   transform: rotate(0deg);
   margin: 0;
+  padding-top: 50px;
 }
 
 .ar-year {
@@ -903,6 +904,10 @@ hr {
 
 
 @media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   body {
     font-size: 15px;
   }
@@ -956,7 +961,6 @@ hr {
 
   .main-container {
     width: 100%;
-    text-align: left;
     height: auto;
     margin: 0;
     padding: 0px 30px;
