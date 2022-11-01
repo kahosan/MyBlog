@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/SumiMakito/hexo-theme-typography/README.md",
   "dependencies": {
-    "autoprefixer": "^9.2.0",
-    "sass": "^1.51.0",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.1",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.55.0",
     "scss-compile": "^0.1.7",
     "yamljs": "^0.3.0"
   }
