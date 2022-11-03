@@ -27,9 +27,8 @@ link(href="https://unpkg.com/xfb/favicon/favicon-16x16.png" rel="icon" sizes="16
 link(href="https://unpkg.com/skx@0.0.1/favicon/safari-pinned-tab.svg" rel="mask-icon")
 link(href= "https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" media="all" onload="this.media='all',this.onload=null" rel="stylesheet")
 link(href= "https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" media="all" onload="this.media='all',this.onload=null" rel="stylesheet" )
-link(id="light", rel="stylesheet", href=url_for('css/style.css'))
-//- link(id="light", rel="stylesheet", href="https://unpkg.com/xfb/css/style.css")
-//- link(id="dark" href="https://unpkg.com/xfb/css/style-dark.css" media="all" onload="this.media='all',this.onload=null" rel="stylesheet" disabled)
+link(id="light" rel="stylesheet" href=url_for('css/style.css'))
+link(id="dark" rel="stylesheet" href=url_for("css/style-dark.css") media="all" onload="this.media='all',this.onload=null" disabled)
 link(rel="stylesheet" href="https://unpkg.com/disqusjs@1.3/dist/disqusjs.css")
 script(async="" src="https://www.googletagmanager.com/gtag/js?id=" + theme.GA_MEASUREMENT_ID) 
 script.
