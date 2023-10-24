@@ -27,8 +27,7 @@ link(href= "https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" media=
 link(href= "https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" media="all" onload="this.media='all',this.onload=null" rel="stylesheet" )
 link(id="light" rel="stylesheet" href=url_for('css/style.css'))
 link(rel="stylesheet" href="https://unpkg.com/disqusjs@1.3/dist/disqusjs.css")
-script.
-  "use strict";const getModeFromSystem=()=>window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";const key="theme";const setLS=(key,value)=>{try{localStorage.setItem(key,value)}catch(e){}};const removeLS=key=>{try{localStorage.removeItem(key)}catch(e){}};const getLS=key=>{try{return localStorage.getItem(key)}catch(e){return null;}};(function(){const theme=getLS(key);if(theme==="dark"){document.documentElement.classList.add("dark")}else if(getModeFromSystem==="dark"){document.documentElement.classList.add("dark")}})();const modeChange=()=>{const currentMode=getLS(key)||getModeFromSystem();const targetMode=currentMode==="dark"?"light":"dark";document.documentElement.classList.remove(currentMode);document.documentElement.classList.add(targetMode);setLS(key,targetMode)};window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{if(e.matches&&!getLS(key)){document.documentElement.classList.add("dark")}else if(!e.matches&&!getLS(key)){document.documentElement.classList.remove("dark")}});
+script(src="/js/darkmode.js")
 script(async="" src="https://www.googletagmanager.com/gtag/js?id=" + theme.GA_MEASUREMENT_ID) 
 script.
   function gtag(){window.dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date()),gtag("config","!{theme.GA_MEASUREMENT_ID}")

@@ -30,7 +30,7 @@ const getLS = key => {
 };
 
 (function(){
-  const theme = getLS(key)
+  const theme = getLS(key) || getModeFromSystem();
   if (theme === 'dark') {
     document.documentElement.classList.add('dark');
   } else if (getModeFromSystem === 'dark') {
