@@ -2,13 +2,11 @@
  * @Author: kaho
  * @Date: 2021-07-03 09:46:00
  * @Mail: kahosan@outlook.com
- * @LastEditTime: 2022-02-17
+ * @LastEditTime: 2023-10-24
  */
 
-const darkStyle = '/css/style-dark.css';
-const darkModeToggleBottonElement = document.getElementById('darkmode');
-const getModeFromSystem = () => (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-const getDarkCssElement = () => document.querySelector('link[id="dark"]');
+const getModeFromSystem = () => window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const key = 'theme';
 
 // 来源 Sukka
 const setLS = (key, value) => {
@@ -31,64 +29,27 @@ const getLS = key => {
   }
 };
 
-const inverMode = {
-  dark: 'light',
-  light: 'dark',
-};
-
-const addDarkMode = () => {
-  getDarkCssElement().disabled = '';
-};
-
-// 删除夜间模式
-const deleteDarkMode = () => {
-  getDarkCssElement().disabled = 'true';
-};
-
-const validColorModeKeys = {
-  dark: true,
-  light: false,
-};
+(function(){
+  const theme = getLS(key)
+  if (theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else if (getModeFromSystem === 'dark') {
+    document.documentElement.classList.add('dark');
+  };
+})()
 
 const modeChange = () => {
-  let currentMode = getLS('nowMode');
-
-  if (validColorModeKeys[currentMode] === undefined) {
-    currentMode = getModeFromSystem();
-  }
-
-  if (validColorModeKeys[currentMode]) {
-    deleteDarkMode();
-    setLS('nowMode', 'light');
-  } else {
-    addDarkMode();
-    setLS('nowMode', 'dark');
-  }
-};
-
-(() => {
-  if (getLS('nowMode') === null || getLS('nowMode') === 'system') {
-    const mode = getModeFromSystem();
-
-    if (validColorModeKeys[mode]) {
-      // 设置为该模式
-      addDarkMode();
-    } else {
-      deleteDarkMode();
-    }
-  }
-
-  if (getLS('nowMode') === 'dark') {
-    addDarkMode();
-  }
-})();
+  const currentMode = getLS(key) || getModeFromSystem();
+  const targetMode = currentMode === 'dark' ? 'light' : 'dark';
+  document.documentElement.classList.remove(currentMode);
+  document.documentElement.classList.add(targetMode);
+  setLS(key, targetMode);
+}
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-  if (e.matches) {
-    addDarkMode();
-    setLS('nowMode', 'system');
-  } else {
-    deleteDarkMode();
-    setLS('nowMode', 'system');
+  if (e.matches && !getLS(key)) {
+    document.documentElement.classList.add('dark');
+  } else if (!e.matches && !getLS(key)) {
+    document.documentElement.classList.remove('dark');
   }
 });
