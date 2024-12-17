@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'No tests' && exit",
-    "build": "sass raw/scss:source/css -s compressed --no-source-map && postcss source/css -u autoprefixer -r",
+    "build": "sass raw/scss:source/css --no-source-map",
     "scss-compile": "npm run build",
     "watch": "sass --watch --no-source-map raw/scss:source/css"
   },
@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/SumiMakito/hexo-theme-typography/README.md",
   "dependencies": {
-    "autoprefixer": "^9.8.8",
-    "postcss": "^8.4.18",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.69.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.83.0",
     "yamljs": "^0.3.0"
   }
 }
