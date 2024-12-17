@@ -48,18 +48,24 @@ relative_link: false
 future: true
 
 # 代码高亮
-highlight:
-  enable: true
-  line_number: false
-  auto_detect: false
-  tab_replace: ''
-  wrap: false
-  hljs: true
+syntax_highlighter: prismjs
 prismjs:
-  enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  line_threshold: 0
+  tab_replace: ""
+# highlight:
+#   enable: true
+#   line_number: false
+#   auto_detect: false
+#   tab_replace: ''
+#   wrap: false
+#   hljs: true
+# prismjs:
+#   enable: false
+#   preprocess: true
+#   line_number: true
+#   tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
