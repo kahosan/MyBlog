@@ -35,7 +35,5 @@ jobs:
         uses: cloudflare/wrangler-action@v4
         env:
           USER: root
-          CF_ACCOUNT_ID: ${{ secrets.ACCOUNTID }}
-          CF_ZONE_ID: ${{ secrets.ZONEID }}
         with:
           apiToken: ${{ secrets.CF_WORKERS_TOKEN }}  # CF_WORKERS_TOKEN 为保存 Token 的 Secret 名
