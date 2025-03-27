@@ -13,6 +13,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.4.0",
     "hexo": "^7.3.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^4.0.0",
