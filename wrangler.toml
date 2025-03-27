@@ -1,11 +1,9 @@
 name = "kaho_blog"
-type = "webpack"
 workers_dev = false
 account_id = "$CF_ACCOUNT_ID"
 route = "blog.kahosan.top/*"
-zone_id = "$CF_ZONE_ID"
 compatibility_date = "2022-03-20"
+main = "workers-site/index.js"
 
 [site]
 bucket = "./public"
-entry-point = "workers-site"
