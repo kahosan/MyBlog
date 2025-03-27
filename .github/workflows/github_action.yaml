@@ -32,7 +32,7 @@ jobs:
       
       # 仅仅是 Deploy 部分有所不同而已
       - name: Deploy
-        uses: cloudflare/wrangler-action@3
+        uses: cloudflare/wrangler-action@v3
         env:
           USER: root
           CF_ACCOUNT_ID: ${{ secrets.ACCOUNTID }}
