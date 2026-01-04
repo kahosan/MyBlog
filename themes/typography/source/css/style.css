@@ -636,6 +636,12 @@ iframe {
   color-scheme: auto;
 }
 
+#disqus_thread {
+  padding: 12px;
+  background-color: #121212;
+  border-radius: 8px;
+}
+
 p {
   font-family: var(--font-sans);
   color: var(--foreground-color);
