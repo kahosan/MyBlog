@@ -636,6 +636,10 @@ iframe {
   color-scheme: auto;
 }
 
+iframe[src*="tempest.services.disqus.com/ads-iframe"] {
+  display: none !important;
+}
+
 #disqus_thread {
   padding: 12px;
   background-color: #121212;
