@@ -4,36 +4,36 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
-        node-version: [18.x]
-        pnpm-version: [7.1.7]
+        node-version: [22.x]
+        pnpm-version: [11]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Use pnpm ${{ matrix.pnpm-version }}
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           version: ${{ matrix.pnpm-version }}
-      
+
       - name: Generate
         run: |
           pnpm i && pnpx hexo g
-      
+
       # 仅仅是 Deploy 部分有所不同而已
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         env:
           USER: root
         with:
-          apiToken: ${{ secrets.CF_WORKERS_TOKEN }}  # CF_WORKERS_TOKEN 为保存 Token 的 Secret 名
+          apiToken: ${{ secrets.CF_WORKERS_TOKEN }} # CF_WORKERS_TOKEN 为保存 Token 的 Secret 名
+

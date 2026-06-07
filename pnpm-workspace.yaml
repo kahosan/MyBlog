@@ -1,7 +1,16 @@
+# fix for vercel
+packages:
+  - "."
+
 allowBuilds:
   cwebp-bin: false
-  gifsicle: false
+  gifsicle: true
   hexo-util: false
   jpegtran-bin: false
   pngquant-bin: false
   ttf2woff2: false
+
+  # fix ci
+  sharp: false
+  esbuild: false
+  workerd: false
