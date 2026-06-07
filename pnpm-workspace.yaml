@@ -1,0 +1,7 @@
+allowBuilds:
+  cwebp-bin: false
+  gifsicle: false
+  hexo-util: false
+  jpegtran-bin: false
+  pngquant-bin: false
+  ttf2woff2: false
