@@ -46,7 +46,7 @@ categories: [Google]
 
 然后在这个软件中的设置找到了这样一个选项
 
-![Files by Google](https://cf-image-hosting.kahosan.workers.dev/file/23e47f056712a65bee4c6.png)
+~图丢了~
 
 这选项居然是他妈默认开启的，我有点无语了
 不过问题好歹是解决了，可喜可贺可喜可贺
