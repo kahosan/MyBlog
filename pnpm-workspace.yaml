@@ -4,7 +4,6 @@ packages:
 
 allowBuilds:
   cwebp-bin: false
-  gifsicle: true
   hexo-util: false
   jpegtran-bin: false
   pngquant-bin: false
