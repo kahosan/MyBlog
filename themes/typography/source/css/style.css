@@ -498,7 +498,7 @@
   --foreground-color-darken-a: #3f587d9e !important;
   --pre-background-color: #ececec;
   --code-background-color: #e6e4e4;
-  --code-color: #000000;
+  --code-color: #4b4b4b;
   --megumin-color: #ff4b44;
   --font-sans: HarmonyOS_Sans, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Segoe UI Emoji", "Segoe UI Symbol", Helvetica, Arial, sans-serif;
   --title-font: "Noto Serif SC", serif;
@@ -573,7 +573,7 @@ html.dark {
   --foreground-color-darken-a: #3f587d !important;
   --pre-background-color: #282c34;
   --code-background-color: #363a42;
-  --code-color: #ffffff;
+  --code-color: #f1f1f1;
   --bg-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi/P//Py8DpQCXISBxJlING4QaGEdDiQgAEGAAg8sST3LGZYoAAAAASUVORK5CYII=");
   --hr-color: #575757;
   --c-bg: var(--pre-background-color);
@@ -865,10 +865,10 @@ a {
   border-bottom: solid var(--foreground-color) 2px;
   padding: 0;
   cursor: pointer;
-  cursor: hand;
 }
 a:hover, a:focus {
   text-decoration: none;
+  outline: none;
 }
 a:hover {
   color: var(--background-color) !important;
@@ -1055,19 +1055,11 @@ pre * {
 
 code {
   margin: 0;
-  background-color: unset;
+  background-color: var(--code-background-color);
   color: var(--code-color);
   font-family: var(--code-font);
   font-size: 0.875em;
   font-weight: 600;
-}
-code::before {
-  content: "`";
-  font-family: "Menlo";
-}
-code::after {
-  content: "`";
-  font-family: "Menlo";
 }
 
 code.hljs {
